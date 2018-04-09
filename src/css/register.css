@@ -1,0 +1,101 @@
+#main{
+  border-bottom: 1px solid #DDDDDD;
+  background: url(../img/bg.jpg) repeat-x;
+}
+.content{
+  position: relative;
+  width: 970px;
+  margin: 0 auto;
+  height: 466px;
+  background:url(../img/login_bg.jpg) no-repeat center 0;
+}
+.logo img{
+  width: 167px;
+  height: 95px;
+  padding-left: 10px;
+}
+.reg{
+  width: 548px;
+  height: 436px;
+  border: 2px solid #EEDFBB;
+  background: #fff;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  bottom: 64px;
+  color: #666;
+  font-size: 12px;
+}
+.reg h2{
+  font: bold 14px/31px Verdana, Geneva, sans-serif;
+  padding-left: 10px;
+  background-color: #E9E9E9;
+}
+.reg p{
+  font-family: Applied Font;
+  font-size: 12px;
+  color: #FF0000;
+  padding: 10px 0 10px 10px;
+}
+.reg em{
+  color: #C6002C;
+}
+.reg label{
+  display: inline-block;
+  width: 17%;
+  font-size: 12px;
+  text-align: right;
+  height: 24px;
+  min-height: 24px;
+}
+.reg input{
+  width: 33%;height: 24px;
+  border:1px solid #CCCCCC;
+}
+.reg .tips{
+  display: none;
+  width: 50%;
+  background: #ECF9DF;
+  padding-left: 5px;
+  color: #FF4C31;
+}
+.reg .else{
+  padding-left: 90px;
+}
+.reg .else .vCode{
+  width: 60px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  display: inline-block;
+  border:1px solid #000;
+  background-color: #CBEAFE;
+}
+.reg .else a{
+  display: inline-block;
+  color:#3F70FC;
+  cursor: pointer;
+}
+.reg .else .updata{
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.reg .else input{
+  width: 13px;height: 13px;
+  vertical-align: -14%;
+}
+.reg .else span{
+  display: inline-block;
+  font-size: 12px;
+}
+.reg .else .register{
+  width: 140px;
+  height: 40px;
+  display: block;
+  overflow: hidden;
+  background: url(../img/register.png) no-repeat 0 0;
+  margin-top: 3px;
+}
+.reg .else .register:hover{background-position: 0 -40px;}

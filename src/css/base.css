@@ -1,0 +1,192 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, img, input {
+  margin: 0;
+  padding: 0;
+}
+
+img, input, button {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+select, input {
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.clearfix::before {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+i, em {
+  font-style: normal;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0;
+}
+
+.cont {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+#feihu {
+  min-width: 1200px;
+}
+
+#header {
+  background-color: #EAEAEA;
+  border-bottom: #ccc;
+}
+
+#header p {
+  height: 30px;
+  line-height: 30px;
+  color: #666;
+  float: left;
+  font-size: 12px;
+}
+
+#header p a {
+  display: inline-block;
+  color: #0066FF;
+}
+
+#header ul li {
+  float: left;
+}
+
+#header ul li a {
+  display: block;
+  height: 30px;
+  color: #333;
+  text-align: center;
+  line-height: 30px;
+  padding: 0 10px 0 18px;
+}
+
+#header ul li i {
+  vertical-align: 20%;
+}
+
+#header ul li:first-child i {
+  border-right: 1px solid #CCC;
+  padding-right: 10px;
+}
+
+#header ul li:last-child i {
+  border-left: 1px solid #CCC;
+  padding-left: 10px;
+}
+
+#footer .link {
+  padding-top: 65px;
+}
+
+#footer .link ul {
+  padding-left: 144px;
+}
+
+#footer .link ul li p {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  color: #999;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+#footer .link ul li span {
+  color: #333;
+}
+
+#footer .link ul li i {
+  color: #FF6600;
+}
+
+#footer .link dl {
+  width: 140px;
+  border-left: 1px solid #DDD;
+  padding-left: 14px;
+  box-sizing: border-box;
+}
+
+#footer .link dl dt {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+
+#footer .link dl dd {
+  font-size: 12px;
+  line-height: 20px;
+  color: #999;
+}
+
+#footer .copyRight {
+  padding-left: 120px;
+  line-height: 22px;
+  font-size: 12px;
+}
+
+#footer .copyRight ul {
+  padding-left: 0;
+}
+
+#footer .copyRight ul li {
+  float: left;
+  padding: 20px 20px 0 0;
+}
+
+#footer .copyRight ul li a {
+  display: inline-block;
+  color: #333;
+}
+
+#footer .copyRight p {
+  color: #999;
+}

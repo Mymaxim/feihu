@@ -1,0 +1,123 @@
+#main{
+  border-bottom: 1px solid #DDDDDD;
+  background: url(../img/bg.jpg) repeat-x;
+}
+.content{
+  position: relative;
+  width: 970px;
+  margin: 0 auto;
+  height: 466px;
+  background:url(../img/login_bg.jpg) no-repeat center 0;
+}
+.logo img{
+  width: 167px;
+  height: 95px;
+  padding-left: 10px;
+}
+.log{
+  width: 328px;
+    height: 350px;
+    border: 2px solid #EEDFBB;
+    background: #fff;
+    position: absolute;
+    right: 177px;
+    bottom: 64px;
+}
+.log h2{
+  font: bold 14px/31px Verdana, Geneva, sans-serif;
+  padding-left: 10px;
+  background-color: #E9E9E9;
+}
+.log .logBox{
+    height: 316px;
+    border: 1px solid #C7012C;
+    padding: 10px;
+}
+.log p{
+    height: 30px;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    padding-left: 10px;
+    background: #FAFAFA;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.log label{
+  display: inline-block;
+  width: 22%;
+  text-align: right;
+  height: 24px;
+  min-height: 24px;
+  font-size: 12px;
+}
+.log input{
+  width: 78%;height: 24px;
+  border:1px solid #CCCCCC;
+}
+.log a{
+    display: inline-block;
+    color: #3F70FC;
+    font-size: 12px;
+    text-decoration: underline;
+    padding-left: 66px;
+}
+.log .logBox>a{
+  padding-bottom: 10px;
+}
+.log .else{
+  font-size: 12px;
+  border-top: 1px dashed #CCCCCC;
+  padding-top: 10px;
+}
+.log .else .others{
+  width: 69px;
+  height: 30px;
+}
+.log .else ul{
+  width: 233px;
+}
+.log .else li{
+  float: left;
+}
+.log .else li a{
+  padding-left: 0;
+  vertical-align:50%;
+}
+.log .else li i{
+  display: inline-block;
+  margin-left: 10px;
+  width: 25px;
+  height: 20px;
+  background: url(../img/login_icon.png) no-repeat 6px 0;
+}
+.log .else li:nth-child(2) i{
+  background: url(../img/login_icon.png) no-repeat -40px -3px;
+}
+.log .else li:nth-child(3) i{
+  background: url(../img/login_icon.png) no-repeat -92px -4px;
+}
+.log .else li:nth-child(4) i{
+  background: url(../img/login_icon.png) no-repeat -180px 0;
+}
+.log .else li:nth-child(5) i{
+  background: url(../img/login_icon.png) no-repeat -220px -4px;
+}
+.log .else li:nth-child(6) i{
+  background: url(../img/login_icon.png) no-repeat -255px -2px;
+}
+.log .else li:nth-child(7) i{
+  background: url(../img/login_icon.png) no-repeat -294px -1px;
+}
+.log .else li:nth-child(8) i{
+  background: url(../img/login_icon.png) no-repeat -330px -1px;
+}
+.log .else .login{
+    width: 140px;
+    height: 40px;
+    margin-left: 22%;
+    overflow: hidden;
+    background: url(../img/login.png) no-repeat 0 -60px;
+    margin-top: 10px;
+}
+.login+a{padding-left: 16px;vertical-align: 100%;}
+.log .else .login:hover{background-position: 0 -100px;}

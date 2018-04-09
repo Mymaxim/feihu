@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>飞虎乐购</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/register.css" />
+    <script src="../js/require.js" data-main="../js/register.js"></script>
+</head>
+<body>
+    <header id='header'>
+        <div class="cont clearfix">
+            <p class="fl">您好，欢迎来到飞虎乐购！ <a href='login.html'>安全登录</a> 还没加入我们？<a>免费注册</a></p>
+            <ul class="fr">
+                <li><a href="#">我的账户 <i class="fa fa-sort-desc" aria-hidden="true"></i></a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">网站体验反馈</a></li>
+                <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> 400 883 6900</a></li>
+            </ul>     
+        </div>
+    </header>
+    <main id="main">
+         <div class="content">
+            <div class="logo"><a href="#"><img src="../img/login_logo.jpg"/></a></div>
+            <div class="reg">
+                <h2>用户注册</h2>
+                <p>请填写注册信息，带有<em>*</em>号的为必填项</p>
+                <label for=""><em>*</em>用户名：</label><input type="text" id='name'/><i class="tips"></i><br />
+                <label for=""><em>*</em>密码：</label><input type="password" id='pwd'/><i class="tips"></i><br />
+                <label for=""><em>*</em>确认密码：</label><input type="password" id="confirm"/><i class="tips"></i><br />
+                <label for=""><em>*</em>邮箱：</label><input type="email" id='email'/><i class="tips"></i><br />
+                <label for=""><em>*</em>推荐人：</label><input type="text" id="referre"/><i class="tips"></i><br />
+                <label for=""><em>*</em>活动代码：</label><input type="text" id="actCode"/><i class="tips"></i><br />
+                <label for=""><em>*</em>验证码：</label><input type="text" id="vcode"/><i class="tips"></i><br />
+                <div class="else">
+                    <div class="vCode"></div><a class="updata" id='getCode'>刷新</a><br />
+                    <input type="checkbox" checked id='checkfile'/><span>我已阅读并同意<a>飞虎乐购用户协议</a></span>
+                    <a class="register"></a>
+                </div>   
+                
+
+            </div>
+         </div>
+    </main>
+    <footer id="footer"></footer>
+</body>
+</html>

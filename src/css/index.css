@@ -1,0 +1,446 @@
+@charset "UTF-8";
+#search h1 {
+  height: 100px;
+  background: url(../img/logo.png) no-repeat center 15px;
+}
+
+#search .sear {
+  width: 430px;
+  padding-top: 38px;
+}
+
+#search .sear input {
+  height: 28px;
+  border: 1px solid #FFC400;
+  border-radius: 0;
+}
+
+#search .sear span {
+  background-color: #FFC400;
+  border: 1px solid #FFC400;
+  color: #333;
+  border-radius: 0;
+}
+
+#nav {
+  background-color: #FFC400;
+  position: relative;
+}
+
+#nav .myNav li {
+  float: left;
+}
+
+#nav .myNav li a {
+  display: block;
+  color: #000;
+  padding: 0 15px;
+  text-align: center;
+  line-height: 40px;
+}
+
+#nav .myNav li:hover a {
+  background: #333;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#nav .myNav li:first-child {
+  width: 190px;
+}
+
+#nav .myNav li:first-child:hover a {
+  background-color: #FFC400;
+  color: #000;
+}
+
+#nav button:nth-child(1) {
+  background-color: #FFF;
+  width: 120px;
+}
+
+#nav button:nth-child(2) {
+  background-color: #FFDE00;
+  width: 68px;
+}
+
+#nav .menu {
+  position: absolute;
+  top: 40px;
+  z-index: 100;
+  background-color: #FFF;
+}
+
+#nav .menu li a {
+  display: block;
+  height: 32px;
+  width: 190px;
+  text-align: center;
+}
+
+#nav .menu li:nth-child(1) {
+  background: url(../img/tbut1.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(2) {
+  background: url(../img/tbut2.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(3) {
+  background: url(../img/tbut3.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(4) {
+  background: url(../img/tbut4.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(5) {
+  background: url(../img/tbut5.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(6) {
+  background: url(../img/tbut6.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(7) {
+  background: url(../img/tbut7.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(8) {
+  background: url(../img/tbut8.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(9) {
+  background: url(../img/tbut9.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(10) {
+  background: url(../img/tbut10.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(11) {
+  background: url(../img/tbut11.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(12) {
+  background: url(../img/tbut12.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(13) {
+  background: url(../img/tbut13.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(14) {
+  background: url(../img/tbut14.png) no-repeat 36px 0;
+}
+
+#nav .menu li:nth-child(15) {
+  background: url(../img/tbut15.png) no-repeat 36px 0;
+}
+
+#nav .news {
+  width: 228px;
+  height: 480px;
+  margin-right: 18px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: 100;
+}
+
+#nav .news .navbtn {
+  padding: 8px 0 0 18px;
+  height: 40px;
+  width: 228px;
+  background-color: #FFC400;
+}
+
+#nav .news .navbtn .myBtn {
+  height: 24px;
+  padding-top: 2px;
+  font-size: 14px;
+}
+
+#nav .news .navbtn .myBtn span {
+  color: red;
+}
+
+#nav .news p {
+  background-color: #FFF;
+}
+
+#nav .news p span {
+  display: inline-block;
+  height: 40px;
+  width: 126px;
+  font-size: 16px;
+  line-height: 40px;
+  padding-left: 22px;
+  margin-left: 80px;
+  background: url("../img/gonggao.png") no-repeat 0 center;
+}
+
+#nav .news .gonggao {
+  background-color: #EAF3DD;
+  padding: 20px;
+}
+
+#nav .news .gonggao li a {
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FF0000;
+}
+
+#nav .news .gonggao li li:nth-child(4) a {
+  color: #333;
+}
+
+#nav .news .gonggao li li:nth-child(5) a {
+  color: #333;
+}
+
+#banner {
+  /*向左向右的按钮*/
+}
+
+#banner .carousel {
+  position: relative;
+}
+
+#banner .carousel ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 480px;
+}
+
+#banner .carousel ul li {
+  width: 100%;
+  height: 480px;
+  list-style: none;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#banner .carousel ul li:nth-child(1) {
+  background: url(../img/banner_01.jpg) no-repeat center 0;
+}
+
+#banner .carousel ul li:nth-child(2) {
+  background: url(../img/banner_02.jpg) no-repeat center 0;
+}
+
+#banner .carousel ul li:nth-child(3) {
+  background: url(../img/banner_03.jpg) no-repeat center 0;
+}
+
+#banner .carousel ul li:nth-child(4) {
+  background: url(../img/banner_04.jpg) no-repeat center 0;
+}
+
+#banner .carousel ul li:nth-child(5) {
+  background: url(../img/banner_05.jpg) no-repeat center 0;
+}
+
+#banner #item1 {
+  z-index: 3;
+}
+
+#banner .left, #banner .right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 60px;
+  border: none;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.5;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#banner .left {
+  left: 17.6%;
+}
+
+#banner .right {
+  right: 246px;
+}
+
+#banner .dot {
+  bottom: 0;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+}
+
+#banner .dot span {
+  display: inline-block;
+  width: 42px;
+  height: 12px;
+  background: #445D21;
+  margin: 0 15px 0 0;
+  cursor: pointer;
+}
+
+#banner .dot .active {
+  background: #C45E22 !important;
+}
+
+#miaosha {
+  background-color: #FAFAFA;
+}
+
+#miaosha ul {
+  padding: 25px 0 0 0;
+}
+
+#miaosha ul li {
+  float: left;
+  height: 267px;
+  width: 198px;
+  padding: 10px 6px;
+  box-sizing: border-box;
+  margin-right: 2px;
+}
+
+#miaosha ul li img {
+  width: 170px;
+  height: 170px;
+  margin-left: 7px;
+}
+
+#miaosha ul li p {
+  line-height: 22px;
+  text-align: center;
+  font-weight: bold;
+  padding: 14px 0;
+}
+
+#miaosha ul li span {
+  display: block;
+  padding: 4px;
+  font-size: 18px;
+  color: #fff;
+  background: url(../img/but-msz.png) no-repeat;
+}
+
+#miaosha ul li span del {
+  font-size: 12px;
+}
+
+#miaosha ul li span button {
+  background-color: transparent;
+}
+
+#miaosha ul li:nth-child(even) {
+  background-color: #CBCBCB;
+}
+
+#miaosha ul .msTime {
+  position: relative;
+  background-image: url("../img/miaosha_bj.jpg");
+}
+
+#miaosha ul .msTime span {
+  font-size: 24px;
+  font-family: "Microsoft YaHei";
+  color: #fff;
+  position: absolute;
+  top: 171px;
+  background-color: transparent;
+  border: 0 none;
+}
+
+#main {
+  background-color: #FAFAFA;
+}
+
+#main .tit {
+  border-bottom: 2px solid #333;
+  padding-top: 28px;
+}
+
+#main .tit h2 {
+  line-height: 44px;
+  font-size: 24px;
+}
+
+#main .tit ul li {
+  float: left;
+}
+
+#main .tit ul li a {
+  display: block;
+  font-size: 12px;
+  line-height: 32px;
+  padding-left: 22px;
+  padding-top: 12px;
+}
+
+#main .leftSide ul, #main .rightSid ul {
+  width: 600px;
+  height: 416px;
+  overflow: hidden;
+}
+
+#main .leftSide ul li, #main .rightSid ul li {
+  float: left;
+}
+
+#main .leftSide ul li a, #main .rightSid ul li a {
+  display: block;
+  text-align: center;
+}
+
+#main .leftSide ul li a {
+  border-left: 1px solid #F5F5F5;
+}
+
+#main .rightSid {
+  background-color: #FFF;
+}
+
+#main .rightSid ul li a {
+  height: 208px;
+  padding: 6px 20px;
+  border-left: 1px solid #F5F5F5;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+#main .rightSid ul li a img {
+  width: 150px;
+  height: 157px;
+}
+
+#main .rightSid ul li a p {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+#main .rightSid ul li a span {
+  display: block;
+  color: red;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#main .bot ul li {
+  float: left;
+}
+
+#main .bot ul li a {
+  display: block;
+  width: 150px;
+  height: 70px;
+}
