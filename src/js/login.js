@@ -20,7 +20,7 @@ require(['jquery'],function($){
                         }
                     }
                 })
-                break;    
+            break;    
         }
    }).on('click','.login',function(){
             var password = $('#password').val();

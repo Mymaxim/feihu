@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>商品详情</title>
+    <link rel="stylesheet" type="text/css" href="../lib/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/details.css" />
+    <link rel="stylesheet" type="text/css" href="../css/magnifier.css">
+    <script src="../js/require.js" data-main="../js/details.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <div id="search"></div>
+    <nav id="nav"></nav>
+    <main id="main">
+        <div class="cont clearfix">
+            <ul class="pos clearfix">
+                <li><a href="#">综合专区</a></li>
+            </ul>
+            <div class="detail">
+                <div class="fangdajing">
+                    <div class="magnifier" id="magnifier1">
+                        <div class="magnifier-container">
+                            <div class="images-cover"></div>
+                            <!--当前图片显示容器-->
+                            <div class="move-view"></div>
+                            <!--跟随鼠标移动的盒子-->
+                        </div>
+                        <div class="magnifier-assembly">
+                            <div class="magnifier-btn">
+                                <span class="magnifier-btn-left">&lt;</span>
+                                <span class="magnifier-btn-right">&gt;</span>
+                            </div>
+                            <!--按钮组-->
+                            <div class="magnifier-line">
+                                <ul class="clearfix animation03">
+                                    <li>
+                                        <div class="small-img">
+                                            <img src="../img/iphone.jpg"/>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="small-img">
+                                            <img src="../img/iphonex2.jpg" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="small-img">
+                                            <img src="../img/iphonex3.jpg" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="small-img">
+                                            <img src="../img/iphonex4.jpg" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="small-img">
+                                            <img src="../img/iphonex5.jpg" />
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--缩略图-->
+                        </div>
+                        <div class="magnifier-view"></div>
+                        <!--经过放大的图片显示容器-->
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </main>
+    <div class="Img">
+        <div class="cont bg"></div>
+    </div>
+    <footer id="footer"></footer>
+    <script type="text/javascript" src="../js/magnifier.js"></script>
+</body>
+</html>

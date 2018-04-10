@@ -3,17 +3,10 @@ require.config({
         'jquery':'../lib/js/jquery-3.2.1'
     }
  })
-require(['jquery'],function($){
+require(['jquery','common'],function($,common){
     $('#footer').load('../index.html #footer .copyRight');
-    function randomCode(){
-        var str = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';//15
-        var res = '';
-        for(var i=0;i<6;i++){
-            res += str[parseInt(Math.random()*str.length)];
-        }
-        return res;
-    }
-    $('.vCode').html(randomCode());
+    console.log(common.randomCode());
+    $('.vCode').html(common.randomCode());
     var checkLength=0;
     $('.reg').on('blur','input',function(e){
         var namecheck;
@@ -107,9 +100,9 @@ require(['jquery'],function($){
         }        
     }).on('click','#getCode',function(){
          // 获取验证码
-         $('.vCode').html(randomCode());
+         $('.vCode').html(common.randomCode());
     }).on('click','.register',function(){
-        $('.vCode').html(randomCode());
+        $('.vCode').html(common.randomCode());
         if(checkLength == $('.reg input').length-1 || checkLength>$('.reg input').length-1 && $('#checkfile').get(0).checked){
             var confirmname =$('#name').get(0).value;
             var password = $('#pwd').get(0).value;

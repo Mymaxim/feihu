@@ -1,0 +1,123 @@
+#search h1 {
+  height: 100px;
+  background: url(../img/logo.png) no-repeat center 15px;
+}
+
+#search .sear {
+  width: 430px;
+  border: 5px solid #E9E9E9;
+  margin-top: 38px;
+}
+
+#search .sear input {
+  height: 28px;
+  border: 1px solid #C7012C;
+  border-radius: 0;
+}
+
+#search .sear span {
+  background-color: #C7012C;
+  border: 1px solid #C7012C;
+  color: #333;
+  border-radius: 0;
+}
+
+#nav .cont {
+  background-color: #C7012C;
+  border-radius: 5px;
+}
+
+#nav .cont .myNav li {
+  float: left;
+}
+
+#nav .cont .myNav li a {
+  display: block;
+  color: #000;
+  padding: 0 15px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+
+#nav .cont .myNav li:hover a {
+  color: #FDCA30;
+  text-decoration: none;
+}
+
+#nav .cont .myNav li:first-child {
+  width: 190px;
+}
+
+#nav .cont .myNav li:first-child:hover a {
+  color: #fff;
+}
+
+#nav .cont .navbtn {
+  width: 217px;
+  height: 27px;
+  line-height: 27px;
+  margin: 6px 18px 0 0;
+  background: url(../img/listnav.jpg) 0 -40px;
+}
+
+#nav .cont .navbtn li {
+  float: left;
+}
+
+#nav .cont .navbtn li a {
+  display: block;
+  width: 60px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+#nav .cont .navbtn li .Mycart {
+  width: 150px;
+  height: 25px;
+  padding-left: 45px;
+  color: #333;
+  position: relative;
+}
+
+#nav .cont .navbtn li .Mycart em {
+  color: #C8012C;
+  font-weight: bold;
+  margin: 0 2px;
+}
+
+#nav .cont .navbtn li .Mycart i {
+  display: inline-block;
+  padding-left: 10px;
+  vertical-align: 20%;
+}
+
+#main .pos {
+  padding: 12px 0 0 8px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+#main .pos li {
+  float: left;
+}
+
+#main .pos li a {
+  display: block;
+  font-size: 12px;
+  line-height: 32px;
+  color: #666;
+}
+
+#main .pos li:hover a {
+  color: #0066FF;
+}
+
+.Img .bg {
+  height: 47px;
+  background: url(../img/footer.png) no-repeat;
+}
+
+#footer .link {
+  padding-top: 20px;
+}

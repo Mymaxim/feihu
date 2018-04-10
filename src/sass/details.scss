@@ -1,0 +1,104 @@
+$mainColor:#333;
+$fontColor:#666;
+#search{
+  h1{ height: 100px;background: url(../img/logo.png) no-repeat  center 15px;}
+  .sear{
+    width: 430px;border:5px solid #E9E9E9; 
+    margin-top: 38px;
+    input{
+      height: 28px;border:1px solid #C7012C;border-radius:0;
+    }
+    span{
+      background-color: #C7012C;border:1px solid #C7012C;color:$mainColor;border-radius:0;
+    }
+  }
+}
+#nav{
+  .cont{
+      background-color: #C7012C;
+      border-radius:5px;
+    .myNav{
+      li{
+        float:left;
+        a{
+          display: block;color:#000;padding:0 15px;text-align:center;line-height: 40px;
+          color:#fff;
+        }
+      }
+      li:hover a{
+        color: #FDCA30;
+        text-decoration:none;
+      }
+      li:first-child{width: 190px;}
+      li:first-child:hover a{
+        color:#fff;
+      }
+    }
+    .navbtn{
+      width: 217px;
+      height: 27px;
+      line-height: 27px;
+      margin: 6px 18px 0 0;
+      background: url(../img/listnav.jpg) 0 -40px;
+      li{
+        float:left;
+        a{
+          display: block;
+          width: 60px;
+          padding-left: 10px;
+          color: #fff;
+        }
+        .Mycart{
+          width: 150px;
+          height: 25px;
+          padding-left: 45px;
+          color: #333;
+          position: relative;
+          em{
+            color: #C8012C;
+            font-weight: bold;
+            margin: 0 2px;
+          }
+          i{
+            display: inline-block;
+            padding-left: 10px;
+            vertical-align:20%;
+          }
+        }
+      }
+    }  
+  }
+}
+#main{
+  .pos{
+    padding:12px 0 0 8px;
+    margin-bottom: 10px;
+    border-bottom:1px solid #DDDDDD;
+    li{
+      float:left;
+      a{
+        display: block;
+        font-size:12px;
+        line-height: 32px;
+        color:$fontColor;
+      }
+    }
+    li:hover a{
+      color: #0066FF;
+    }
+  }
+  .detail{
+    
+  }
+}
+.Img{
+  .bg{
+    height: 47px;
+    background: url(../img/footer.png) no-repeat
+  }
+}
+#footer{
+  .link{
+    padding-top: 20px;
+  }
+}
