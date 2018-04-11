@@ -99,22 +99,21 @@
         }).join(""))
     })
 
-
-  //   var d = new Date();
-  //   var year = d.getFullYear();
-  //   var month = d.getMonth()+1;
-  //   var date = d.getDate()+1;
-  //   var starttime = new Date("2018/4/8");
-  //   setInterval(function () {
-  //   var nowtime = new Date();
-  //   var time = starttime - nowtime;
-  //   var day = parseInt(time / 1000 / 60 / 60 / 24);
-  //   var hour = parseInt(time / 1000 / 60 / 60 % 24);
-  //   var minute = parseInt(time / 1000 / 60 % 60);
-  //   var seconds = parseInt(time / 1000 % 60);
-  //   $('.timespan').html(hour + ":" + minute + ":" + seconds);
-  // }, 1000);
-  // 
+    //秒杀倒计时
+    //   var d = new Date();
+    //   var year = d.getFullYear();
+    //   var month = d.getMonth()+1;
+    //   var date = d.getDate()+1;
+    //   var starttime = new Date("2018/4/8");
+    //   setInterval(function () {
+    //   var nowtime = new Date();
+    //   var time = starttime - nowtime;
+    //   var day = parseInt(time / 1000 / 60 / 60 / 24);
+    //   var hour = parseInt(time / 1000 / 60 / 60 % 24);
+    //   var minute = parseInt(time / 1000 / 60 % 60);
+    //   var seconds = parseInt(time / 1000 % 60);
+    //   $('.timespan').html(hour + ":" + minute + ":" + seconds);
+    // }, 1000);
   
   
   

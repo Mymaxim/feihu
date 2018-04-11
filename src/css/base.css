@@ -81,6 +81,7 @@ i, em {
 #header {
   background-color: #EAEAEA;
   border-bottom: #ccc;
+  text-decoration: none;
 }
 
 #header p {
@@ -98,29 +99,70 @@ i, em {
 
 #header ul li {
   float: left;
+  font-size: 12px;
 }
 
 #header ul li a {
   display: block;
+  width: 80px;
   height: 30px;
+  line-height: 30px;
   color: #333;
   text-align: center;
-  line-height: 30px;
-  padding: 0 10px 0 18px;
 }
 
-#header ul li i {
-  vertical-align: 20%;
+#header ul .phone {
+  padding-left: 18px;
+  background: url(../img/idx_icon.png) no-repeat -10px 10px;
 }
 
-#header ul li:first-child i {
-  border-right: 1px solid #CCC;
-  padding-right: 10px;
+#header ul .account {
+  position: relative;
+  background: url(../img/idx_icon.png) no-repeat 70px 12px;
 }
 
-#header ul li:last-child i {
+#header ul .account .dragdown1 {
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  display: block;
+  border: 1px solid #CCC;
+  border-top: 0 none;
+  display: none;
+}
+
+#header ul .account:hover {
+  background-color: #FFF;
   border-left: 1px solid #CCC;
-  padding-left: 10px;
+  border-right: 1px solid #CCC;
+}
+
+#header ul .account:hover .dragdown1 {
+  display: block;
+}
+
+#header ul .collect {
+  position: relative;
+}
+
+#header ul .collect .dragdown2 {
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  display: block;
+  border: 1px solid #CCC;
+  border-top: 0 none;
+  display: none;
+}
+
+#header ul .collect:hover {
+  background-color: #FFF;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+}
+
+#header ul .collect:hover .dragdown2 {
+  display: block;
 }
 
 #footer .link {

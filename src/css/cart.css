@@ -1,0 +1,224 @@
+#logo{
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    clear: both;
+    margin-bottom: 10px;
+    height: 100px;
+    padding: 100px 0 0;
+    position: relative;
+    z-index: 90;
+    padding-top: 45px;
+}
+#logo h1{
+    position: absolute;
+    top: 12px;
+    left: 15px;
+}
+#logo h1 a{
+    display: block;
+    width: 300px;
+    height: 88px;
+    overflow: hidden;
+    background: url(../img/logo.png) no-repeat 0 0px;
+    line-height: 400px;
+}
+#logo ul{
+    position: absolute;
+    top: 35px;
+    left: 330px;
+    width: 636px;
+    height: 40px;
+    overflow: hidden;
+    line-height: 35px;
+    background: url(../img/cart.png) no-repeat 0 0;
+}
+#logo ul li{
+    float: left;
+    width: 40px;
+    width: 212px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Microsoft YaHei",simhei;
+}
+#main .cart_hd{
+    margin-top: 15px;
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+#main .cart_hd h2{
+    font-size: 16px;
+    color: #333;
+}
+#main .tips{
+    border: 1px solid #DDDDDD;
+    border-top: solid 2px #c7012c;
+    height: 200px;
+    margin-bottom: 20px;
+    display: none;
+}
+#main .tips .cont{
+    width: 400px;
+    margin:0 auto;
+    padding:40px 0 0 60px;
+    background: url(../img/cart_alert.png) no-repeat 0 45px;
+}
+#main .tips .cont p{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 32px;
+    color:#333;
+}
+#main .tips .cont span{
+    display: inline-block;
+    color: #727272;
+    font-size: 12px;
+    line-height: 22px;
+}
+#main .tips .cont span a{
+    color: #03f;
+}
+#main .cartlist{
+    border-top: solid 2px #c7012c;
+}
+#main .cartlist .list{
+    font-size: 12px;
+    color:#666666;
+    font-weight: normal;
+    border:1px solid #ddd;
+} 
+#main .cartlist .list tr{
+    border-bottom: 1px solid #ddd;
+}
+#main .cartlist .list th{
+    padding: 9px 0;
+}
+#main .cartlist .list td{
+    text-align: center;
+}
+#main .cartlist .list td img{
+    width: 75px;
+    height: 75px;
+}
+#main .cartlist .list th:first-child{
+    width: 94px;
+    border-right: 1px solid #ddd;
+}
+#main .cartlist .list tr td:first-child{
+    width: 94px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+#main .cartlist .list tr td:nth-child(2){
+    padding: 14px 0 14px 80px;
+    width: 240px;
+}
+#main .cartlist .list tr td:nth-child(3){
+    width: 410px;
+}
+#main .cartlist .list tr td:nth-child(4){
+    width: 150px;
+    padding-left: 40px;
+}
+#main .cartlist .list tr td:nth-child(5){
+    width: 140px;
+}
+#main .cartlist .list tr td:nth-child(6){
+    width: 90px;
+}
+#main .cartlist .list tr td:nth-child(7){
+    width: 110px;
+    color: #1C459D;
+    cursor:pointer;
+}
+#main .cartlist .list tr td:nth-child(7) span:hover{
+    color: #ff0000;
+}
+#main .cartlist .list tr td div{
+    width: 70px;
+    position: relative;
+}
+#main .cartlist .list tr td div input{
+    width: 54px;height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border:1px solid #ddd;
+    float:left;
+}
+#main .cartlist .list tr td div span{
+   display:block;
+   width: 15px;height: 12px; 
+   border:1px solid #ddd;
+   text-align: center;
+   line-height: 8px;
+   padding-top: 0;
+   cursor:pointer;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+#main .cartlist .list tr td div .sub{
+    top: 13px;
+}
+#main .cartlist .total{
+    border: solid 1px #ddd;
+    border-top: none;
+    padding: 18px 30px;
+    vertical-align: middle;
+    text-align: right;
+    font-size: 20px;
+    font-family: "Microsoft Yahei";
+    vertical-align: middle;
+    color: #333;
+}
+#main .cartlist .total em,#main .cartlist .total span{
+    color: #f00;
+}
+#main .cartlist .handleCart{
+    padding: 2px 0 0;
+    margin-bottom: 25px;
+}
+#main .cartlist .handleCart span{
+    display: inline-block;
+    width: 95px;
+    height: 25px;
+    font-size: 12px;
+    float: left;
+    cursor: pointer;
+    line-height: 25px;
+    padding-left: 35px;
+    background: url(../img/cart_icon.png) no-repeat 10px -37px;
+}
+#main .cartlist .handleCart span:hover{
+    color: #CE0404;
+}
+#main .cartlist .handleCart .cart_btn{
+    margin-top: 5px;
+}
+#main .cartlist .handleCart .cart_btn .continue{
+    padding: 8px 16px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 20px;
+    background-color: #FCFCFC;
+    border:1px solid #ccc;
+    border-radius: 3px;
+}
+#main .cartlist .handleCart .cart_btn .checkout{
+    padding: 10px 30px;
+    color:#fff;
+    background-color:#F87600;
+    border-radius: 3px;
+    
+}
+#main .cartbox{
+    height: 288px;
+    background: url(../img/cartbox.png) no-repeat;
+    border-bottom: 1px solid #DDDDDD;
+}

@@ -3,7 +3,7 @@ require.config({
         'jquery':'../lib/js/jquery-3.2.1'
     },
     shim:{
-        "magnifier":['jquery']
+        'magnifier':['jquery']
     }
  })
 require(['jquery','magnifier'],function($){
@@ -18,7 +18,7 @@ require(['jquery','magnifier'],function($){
             width : 350,//承载容器宽
             height : 350,//承载容器高
             moveWidth : null,//如果设置了移动盒子的宽度，则不计算缩放比例
-            zoom : 2//缩放比例
+            zoom : 3//缩放比例
         };
 
         var _magnifier = magnifier(magnifierConfig);

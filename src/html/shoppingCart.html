@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>我的购物车</title>
+    <link rel="stylesheet" type="text/css" href="../lib/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/cart.css" />
+    <script src="../js/require.js" data-main="../js/shoppingCart.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <div id="logo">
+        <h1><a href="#"></a></h1>
+        <ul>
+            <li>我的购物车</li>
+            <li>确认订单信息</li>
+            <li>成功提交订单</li>
+        </ul>
+
+    </div>
+    <main id="main">
+        <div class="cont">
+            <div class="cart_hd">
+                <h2>我挑选的商品</h2>
+            </div>
+            <div class="tips">
+                <div class="cont">
+                    <p>您的购物车里还没有添加任何商品</p>
+                    <span>建议您：1.<a href="#">去逛逛</a>网站里的商品进行购买。<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.<a href="#">登录</a>到您的专属购物车，继续购买上次加入的商品。</span>
+                </div>
+            </div>
+            <div class="cartlist">
+                <table cellspacing="0" cellpadding="0" class="list">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"/>全选</th>
+                            <th>飞虎自营商品</th>
+                            <th>商品名称</th>
+                            <th>商品数量</th>
+                            <th>商品单价</th>
+                            <th>飞虎总价</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"/></td>
+                            <td><img src="../img/goods1.jpg" /></td>
+                            <td>Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</td>
+                            <td>
+                                <div class="clearfix">
+                                    <input type="text" value='1'/>
+                                    <span class="sub"> - </span>
+                                    <span class="add"> + </span>
+                                </div>
+                             </td>
+                            <td>￥ 9488</td>
+                            <td>￥ 9488</td>
+                            <td><span>删除</span> | <span>收藏</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"/></td>
+                            <td><img src="../img/goods1.jpg" /></td>
+                            <td>Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</td>
+                            <td>
+                                <div class="clearfix">
+                                    <input type="text" value='1'/>
+                                    <span class="sub"> - </span>
+                                    <span class="add"> + </span>
+                                </div>
+                             </td>
+                            <td>￥ 9488</td>
+                            <td>￥ 9488</td>
+                            <td><span>删除</span> | <span>收藏</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"/></td>
+                            <td><img src="../img/goods1.jpg" /></td>
+                            <td>Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</td>
+                            <td>
+                                <div class="clearfix">
+                                    <input type="text" value='1'/>
+                                    <span class="sub"> - </span>
+                                    <span class="add"> + </span>
+                                </div>
+                             </td>
+                            <td>￥ 9488</td>
+                            <td>￥ 9488</td>
+                            <td><span>删除</span> | <span>收藏</span></td>
+                        </tr>
+                    </thead>
+                </table>
+                <div class="total">总金额：<em>￥</em><span class="newTotal"></span></div>
+                <div class="handleCart clearfix">
+                    <span>清空购物车</span>
+                    <div class="cart_btn fr">
+                        <a href="../index.html" class="continue">继续购物</a>
+                        <a href="#" class="checkout">去&nbsp;&nbsp;结&nbsp;&nbsp;算</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cartbox"></div>
+        </div>
+    </main>
+    <footer id="footer"></footer> 
+</body>
+</html>

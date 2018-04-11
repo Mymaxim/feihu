@@ -113,6 +113,227 @@
   color: #0066FF;
 }
 
+#main .detail .fangdajing {
+  width: 30%;
+}
+
+#main .detail .fangdajing p {
+  width: 350px;
+  padding: 20px 0;
+}
+
+#main .detail .fangdajing p a {
+  display: inline-block;
+  float: left;
+  color: #3366CC;
+}
+
+#main .detail .fangdajing p em {
+  padding-left: 100px;
+}
+
+#main .detail .fangdajing p span {
+  display: inline-block;
+  float: right;
+}
+
+#main .detail .fangdajing p span i {
+  display: inline-block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background: url(../img/details_icon.jpg) no-repeat 0 0;
+}
+
+#main .detail .fangdajing p span i:nth-child(2) {
+  background-position: 0 -16px;
+}
+
+#main .detail .fangdajing p span i:nth-child(3) {
+  background-position: 0 -32px;
+}
+
+#main .detail .fangdajing p span i:nth-child(4) {
+  background-position: 0 -48px;
+}
+
+#main .goods {
+  padding: 4px 0 0 18px;
+  width: 70%;
+  font-size: 12px;
+}
+
+#main .goods .tit {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+#main .goods .shortname {
+  color: #666;
+  font-size: 16px;
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px dashed #CCC;
+}
+
+#main .goods .price span {
+  display: inline-block;
+  line-height: 46px;
+}
+
+#main .goods .price span em {
+  font-size: 22px;
+  color: #C7012C;
+}
+
+#main .goods .price span em i {
+  font-size: 16px;
+}
+
+#main .goods .price span:first-child {
+  float: left;
+}
+
+#main .goods .price span:last-child {
+  float: right;
+  color: #999999;
+  font-size: 12px;
+}
+
+#main .goods .jifen {
+  padding-bottom: 16px;
+  border-bottom: 1px dashed #CCCCCC;
+}
+
+#main .goods .jifen a {
+  color: #3366CC;
+}
+
+#main .goods .tit {
+  padding-top: 12px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+#main .goods .tit span {
+  color: #C7012C;
+}
+
+#main .goods .kucun {
+  height: 26px;
+  padding: 20px 0;
+}
+
+#main .goods .kucun .province {
+  display: inline-block;
+  border: 1px solid #ccc;
+  position: relative;
+  padding: 0 6px;
+}
+
+#main .goods .kucun .province i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  line-height: 12px;
+  border: 1px solid #ccc;
+  float: right;
+  margin: 4px 0 0 6px;
+}
+
+#main .goods .kucun span {
+  color: #C7012C;
+}
+
+#main .goods .server {
+  line-height: 40px;
+}
+
+#main .goods .server a {
+  color: #C7012C;
+}
+
+#main .goods .comment {
+  padding-bottom: 20px;
+}
+
+#main .goods .comment em {
+  display: inline-block;
+  width: 90px;
+  height: 16px;
+  overflow: hidden;
+  background: url(../img/comment.png) no-repeat 0 -16px;
+}
+
+#main .goods .comment a {
+  color: #3366CC;
+}
+
+#main .goods .buy {
+  padding: 20px;
+  background-color: #F8F8F8;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#main .goods .buy .choose span {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  background-color: #FFF;
+}
+
+#main .goods .buy .choose .color {
+  margin-bottom: 30px;
+}
+
+#main .goods .buy .choose .ROM {
+  margin-bottom: 20px;
+}
+
+#main .goods .buy .number .num {
+  display: inline-block;
+  height: 22px;
+  width: 56px;
+  border: 1px solid #ccc;
+  line-height: 20px;
+  margin: 0 4px;
+}
+
+#main .goods .buy .number span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#main .goods .buy .action {
+  margin-top: 20px;
+}
+
+#main .goods .buy .action button {
+  width: 140px;
+}
+
+#main .goods .buy .action span {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+#main .goods .buy .action span i {
+  color: #FFB923;
+}
+
+#main .goods .buy .action span:hover {
+  color: #FFB923;
+}
+
 .Img .bg {
   height: 47px;
   background: url(../img/footer.png) no-repeat;

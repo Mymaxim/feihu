@@ -1,5 +1,6 @@
 $mainColor:#333;
 $fontColor:#666;
+$price:#C7012C;
 #search{
   h1{ height: 100px;background: url(../img/logo.png) no-repeat  center 15px;}
   .sear{
@@ -88,7 +89,179 @@ $fontColor:#666;
     }
   }
   .detail{
-    
+    .fangdajing{
+      width: 30%;
+      p{
+        width: 350px;
+        padding: 20px 0;
+        a{
+          display: inline-block;
+          float:left;
+          color: #3366CC;
+        }
+        em{
+          padding-left: 100px;
+        }
+        span{
+          display: inline-block;
+          float:right;
+          i{
+            display: inline-block;
+            float:left;
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            background: url(../img/details_icon.jpg) no-repeat 0 0;
+          }
+          i:nth-child(2){
+            background-position: 0 -16px;
+          }
+          i:nth-child(3){
+            background-position: 0 -32px;
+          }
+          i:nth-child(4){
+            background-position: 0 -48px;
+          }
+        }
+      }
+    }
+  }
+  .goods{
+    padding:4px 0 0 18px;
+    width: 70%;
+    font-size:12px;
+    .tit{
+      height: 30px;
+      line-height: 30px;
+      font-size:16px;
+      color:$mainColor;
+    }
+    .shortname{
+      color:$fontColor;
+      font-size:16px;
+      height: 44px;
+      line-height: 44px;
+      border-bottom:1px dashed #CCC;
+    }
+    .price{
+      span{
+        display: inline-block;
+        line-height: 46px;
+        em{
+          font-size:22px;
+          color:$price;
+          
+          i{
+            font-size:16px;
+          }
+        }
+      }
+      span:first-child{float:left;}
+      span:last-child{float:right;color:#999999;font-size:12px;}
+    }
+    .jifen{
+      padding-bottom: 16px;
+      border-bottom:1px dashed #CCCCCC;
+      a{
+        color: #3366CC;
+      }
+    }
+    .tit{
+      padding-top: 12px;
+      font-size:12px;
+      line-height: 20px;
+      span{color:$price;}
+    }
+    .kucun{
+      height: 26px;
+      padding: 20px 0;
+      .province{
+        display: inline-block;
+        border:1px solid #ccc;
+        position:relative;
+        padding: 0 6px;
+        i{
+          display: inline-block;
+          width: 12px;height: 12px;
+          text-align:center;
+          line-height: 12px;
+          border:1px solid #ccc;
+          float: right;
+          margin: 4px 0 0 6px;
+        }
+      }
+      span{color:$price;}
+    }
+    .server{
+      line-height: 40px;
+      a{color:$price;}
+    }
+    .comment{
+      padding-bottom: 20px;
+      em{
+        display: inline-block;
+        width: 90px;
+        height: 16px;
+        overflow: hidden;
+        background: url(../img/comment.png) no-repeat 0 -16px;
+      }
+      a{color: #3366CC;}
+    }
+    .buy{
+      padding: 20px;
+      background-color: #F8F8F8;
+      border:1px solid #ccc;
+      border-radius:3px;
+      .choose{
+        // div{
+        //   height: 40px;
+        // }
+        span{
+          padding: 8px 16px;
+          border:1px solid #ccc;
+          margin-right: 10px;
+          background-color: #FFF;
+        }
+        .color{
+          margin-bottom: 30px;
+        }
+        .ROM{
+          margin-bottom: 20px;
+        }
+      }
+      .number{
+        .num{
+          display: inline-block;
+          height: 22px;width: 56px;
+          border:1px solid #ccc;
+          line-height: 20px;
+          margin: 0 4px;
+        }
+        span{
+          display: inline-block;
+          width: 20px;height: 20px;
+          border:1px solid #ccc;
+          text-align:center;
+        }
+      }
+      .action{
+        margin-top: 20px;
+        button{
+          width: 140px;
+        }
+        span{
+          display: inline-block;
+          padding-left: 10px;
+          font-size:14px;
+          i{
+            color: #FFB923;
+          }
+        }
+        span:hover{
+          color: #FFB923;
+        }
+      }
+    }
   }
 }
 .Img{
