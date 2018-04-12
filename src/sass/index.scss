@@ -104,11 +104,12 @@ $lineColor: #666;
   }
   .news{
     width: 228px;
-    height: 480px;
+    height: 520px;
     margin-right: 18px;
     position:absolute;
     top: 0px;
     right:0;
+    overflow:hidden;
     z-index:100;
     .navbtn{
     padding: 8px 0 0 18px;
@@ -135,18 +136,12 @@ $lineColor: #666;
       } 
     }
     .gonggao{
-      background-color: #EAF3DD;padding:20px;
+      background-color: #EAF3DD;padding:18px 10px;
       li{
-        a{display: block;
+        color:#FF0000;
+        a{display: inline-block;
           font-size:12px;
           line-height:20px;
-          color:#FF0000;
-        }
-        li:nth-child(4) a{
-          color:$mainColor;
-        }
-        li:nth-child(5) a{
-          color:$mainColor;
         }
       }  
     }
@@ -316,17 +311,14 @@ $lineColor: #666;
       overflow: hidden;
       li{
         float:left;
-        a{
-          display: block;
-          text-align:center;
-        }
+        text-align:center;
       }
     }
   }
   .leftSide{
     ul{
       li{
-        a{border-left:1px solid #F5F5F5;}
+        border-left:1px solid #F5F5F5;
       }
     }
   }
@@ -334,8 +326,8 @@ $lineColor: #666;
     background-color: #FFF;
     ul{
       li{
-        a{
           height: 208px;
+          width: 200px;
           padding: 6px 20px;
           border-left:1px solid #F5F5F5;
           border-bottom:1px solid #F5F5F5;
@@ -352,7 +344,6 @@ $lineColor: #666;
             display: block
             ;color:red;font-size:14px;line-height:18px;
           }
-        }
       }
     }
   }

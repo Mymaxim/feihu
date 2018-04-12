@@ -147,11 +147,12 @@
 
 #nav .news {
   width: 228px;
-  height: 480px;
+  height: 520px;
   margin-right: 18px;
   position: absolute;
   top: 0px;
   right: 0;
+  overflow: hidden;
   z-index: 100;
 }
 
@@ -189,22 +190,17 @@
 
 #nav .news .gonggao {
   background-color: #EAF3DD;
-  padding: 20px;
+  padding: 18px 10px;
 }
 
-#nav .news .gonggao li a {
-  display: block;
-  font-size: 12px;
-  line-height: 20px;
+#nav .news .gonggao li {
   color: #FF0000;
 }
 
-#nav .news .gonggao li li:nth-child(4) a {
-  color: #333;
-}
-
-#nav .news .gonggao li li:nth-child(5) a {
-  color: #333;
+#nav .news .gonggao li a {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 #banner {
@@ -403,14 +399,10 @@
 
 #main .leftSide ul li, #main .rightSid ul li {
   float: left;
-}
-
-#main .leftSide ul li a, #main .rightSid ul li a {
-  display: block;
   text-align: center;
 }
 
-#main .leftSide ul li a {
+#main .leftSide ul li {
   border-left: 1px solid #F5F5F5;
 }
 
@@ -418,24 +410,25 @@
   background-color: #FFF;
 }
 
-#main .rightSid ul li a {
+#main .rightSid ul li {
   height: 208px;
+  width: 200px;
   padding: 6px 20px;
   border-left: 1px solid #F5F5F5;
   border-bottom: 1px solid #F5F5F5;
 }
 
-#main .rightSid ul li a img {
+#main .rightSid ul li img {
   width: 150px;
   height: 157px;
 }
 
-#main .rightSid ul li a p {
+#main .rightSid ul li p {
   font-size: 12px;
   line-height: 24px;
 }
 
-#main .rightSid ul li a span {
+#main .rightSid ul li span {
   display: block;
   color: red;
   font-size: 14px;

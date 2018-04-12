@@ -212,13 +212,13 @@
   color: #3366CC;
 }
 
-#main .goods .tit {
+#main .goods .tips {
   padding-top: 12px;
   font-size: 12px;
   line-height: 20px;
 }
 
-#main .goods .tit span {
+#main .goods .tips span {
   color: #C7012C;
 }
 
@@ -231,7 +231,7 @@
   display: inline-block;
   border: 1px solid #ccc;
   position: relative;
-  padding: 0 6px;
+  padding: 0 4px 0 8px;
 }
 
 #main .goods .kucun .province i {
@@ -242,7 +242,7 @@
   line-height: 12px;
   border: 1px solid #ccc;
   float: right;
-  margin: 4px 0 0 6px;
+  margin: 2px 0 0 8px;
 }
 
 #main .goods .kucun span {
@@ -297,11 +297,13 @@
 
 #main .goods .buy .number .num {
   display: inline-block;
-  height: 22px;
+  height: 21px;
   width: 56px;
   border: 1px solid #ccc;
+  text-align: center;
   line-height: 20px;
   margin: 0 4px;
+  vertical-align: middle;
 }
 
 #main .goods .buy .number span {

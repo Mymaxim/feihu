@@ -26,8 +26,7 @@
             str = index;
         }
          
-        timer = setInterval(play,3000);
-         
+        timer = setInterval(play,3000);   
     }
     autoPlay();
     $('#banner').mouseover(function(){
@@ -115,6 +114,25 @@
     //   $('.timespan').html(hour + ":" + minute + ":" + seconds);
     // }, 1000);
   
-  
-  
+    var par='';
+    // 点击页面任意商品位置实现跳转到详情页ajax请求
+    function detailAjax(data){
+        $.ajax({
+            url:'../api/index.php',
+            dataType:'json',
+            data:{id:data},
+            success:function(res){
+                console.log(res);
+            },
+        })
+    }
+    function detailHref(data){
+        par+='?'+'id'+'='+data;
+        location.href='html/details.html'+par;
+    }
+    // 延时500ms执行点击首页商品跳转到详情页
+    $('.rightSid').on('click','li',function(e){
+        detailAjax(this.getAttribute('data-id'));
+        detailHref(this.getAttribute('data-id'));
+    })
 });

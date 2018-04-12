@@ -166,7 +166,7 @@ $price:#C7012C;
         color: #3366CC;
       }
     }
-    .tit{
+    .tips{
       padding-top: 12px;
       font-size:12px;
       line-height: 20px;
@@ -179,7 +179,7 @@ $price:#C7012C;
         display: inline-block;
         border:1px solid #ccc;
         position:relative;
-        padding: 0 6px;
+        padding: 0 4px 0 8px;
         i{
           display: inline-block;
           width: 12px;height: 12px;
@@ -187,7 +187,7 @@ $price:#C7012C;
           line-height: 12px;
           border:1px solid #ccc;
           float: right;
-          margin: 4px 0 0 6px;
+          margin: 2px 0 0 8px;
         }
       }
       span{color:$price;}
@@ -232,10 +232,12 @@ $price:#C7012C;
       .number{
         .num{
           display: inline-block;
-          height: 22px;width: 56px;
+          height: 21px;width: 56px;
           border:1px solid #ccc;
+          text-align:center;
           line-height: 20px;
           margin: 0 4px;
+          vertical-align: middle;
         }
         span{
           display: inline-block;
