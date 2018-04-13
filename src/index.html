@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="js/require.js" data-main="js/index.js"></script>
     <title>飞虎乐购</title>
     <style type="text/css">
     </style>
@@ -59,26 +60,34 @@
                     <li><a href="#">飞虎严选</a></li>
                 </ul>
                 <ul class="menu">
-                    <li><a href="#">手机数码</a></li>
-                    <li><a href="#">生活电器</a></li>
-                    <li><a href="#">厨房电器</a></li>
-                    <li><a href="#">健康电器</a></li>
-                    <li><a href="#">个人护理</a></li>
-                    <li><a href="#">厨房用具</a></li>
-                    <li><a href="#">家具家纺</a></li>
-                    <li><a href="#">服装鞋帽</a></li>
-                    <li><a href="#">钟表首饰</a></li>
-                    <li><a href="#">洗护美妆</a></li>
-                    <li><a href="#">礼品箱包</a></li>
-                    <li><a href="#">运动健康</a></li>
-                    <li><a href="#">母婴玩具</a></li>
-                    <li><a href="#">汽车用品</a></li>
-                    <li><a href="#">食品/健康</a></li>
+                    <li class="phone"><a href="#">手机数码</a></li>
+                    <li class="makeup"><a href="#">洗护美妆</a></li>
+                    <li class="food"><a href="#">食品/健康</a></li>
+                    <li class="health"><a href="#">健康电器</a></li>
+                    <li class="person"><a href="#">个人护理</a></li>
+                    <li class="kitchen"><a href="#">厨房用具</a></li>
+                    <li class="furniture"><a href="#">家具家纺</a></li>
+                    <li class="clock"><a href="#">钟表首饰</a></li>
+                    <li class="cloth"><a href="#">服装鞋帽</a></li>
+                    <li class="life"><a href="#">生活电器</a></li>
+                    <li class="gift"><a href="#">礼品箱包</a></li>
+                    <li class="exercise"><a href="#">运动健康</a></li>
+                    <li class="toy"><a href="#">母婴玩具</a></li>
+                    <li class="car"><a href="#">汽车用品</a></li>
+                    <li class="electric"><a href="#">厨房电器</a></li>
                 </ul>
+                <div class="item">
+                    <span>手机</span>
+                    <span>摄影摄像</span>
+                    <span>电脑外设</span>
+                    <span>手机</span>
+                    <span>摄影摄像</span>
+                    <span>电脑外设</span>
+                </div>
                 <div class="news">
                     <div class="btn-group fr navbtn" role="group" aria-label="...">
                         <button type="button" class="btn myBtn">购物车(<span>0</span>)</button>
-                        <button type="button" class="btn myBtn">去结算</button>
+                        <button type="button" class="btn myBtn"><a href="html/shoppingCart.html">去结算</a></button>
                     </div>
                     <p><span>公告</span></p>
                     <ul class="gonggao">
@@ -89,6 +98,18 @@
                         <li>【公告】<a href="#">价格保护政策取消通知</a></li>
                     </ul>
                     <img src="img/kk.jpg" height="300" width="228" alt="" />
+                </div>
+                <div class="cart">
+                    <div class="myCart clearfix">
+                        <img src="img/5DIV_1.jpg" height="45" width="45"/>
+                        <div class="txt fr">
+                            <p>索尼(SONY) ILCE 套机 </p>
+                            <p class="pri">￥15299.0</p>
+                            <p class="del">删除</p>
+                        </div>
+                    </div> 
+                    <p class="count">共<span class='num'></span>件 &nbsp;&nbsp;金额总计：￥15299.00</p>
+                    <button type="button" class="btn btn-danger turn">去购物车结算</button> 
                 </div>
             </div>
         </nav>
@@ -309,7 +330,5 @@
             </div>  
         </footer>
     </div>
-    <script src="lib/js/jquery-3.2.1.js"></script>
-    <script src="js/index.js"></script>
 </body>
 </html

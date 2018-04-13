@@ -52,13 +52,13 @@ $lineColor: #666;
       }
     }
     li:nth-child(1) a{
-      background: url(../img/tbut1.png) no-repeat 34px center;
+      background: url(../img/tbut15.png) no-repeat 34px center;
     }
     li:nth-child(2) a{
-      background: url(../img/tbut2.png) no-repeat 34px center;
+      background: url(../img/tbut9.png) no-repeat 34px center;
     }
     li:nth-child(3) a{
-      background: url(../img/tbut3.png) no-repeat 34px center;
+      background: url(../img/tbut14.png) no-repeat 34px center;
     }
     li:nth-child(4) a{
       background: url(../img/tbut4.png) no-repeat 34px center;
@@ -76,30 +76,51 @@ $lineColor: #666;
       background: url(../img/tbut8.png) no-repeat 34px center;
     }
     li:nth-child(9) a{
-      background: url(../img/tbut9.png) no-repeat 34px center;
+      background: url(../img/tbut3.png) no-repeat 34px center;
     }
     li:nth-child(10) a{
-      background: url(../img/tbut10.png) no-repeat 34px center;
+      background: url(../img/tbut2.png) no-repeat 34px center;
     }
     li:nth-child(11) a{
-      background: url(../img/tbut11.png) no-repeat 34px center;
+      background: url(../img/tbut10.png) no-repeat 34px center;
     }
     li:nth-child(12) a{
-      background: url(../img/tbut12.png) no-repeat 34px center;
+      background: url(../img/tbut11.png) no-repeat 34px center;
     }
     li:nth-child(13) a{
-      background: url(../img/tbut13.png) no-repeat 34px center;
+      background: url(../img/tbut12.png) no-repeat 34px center;
     }
     li:nth-child(14) a{
-      background: url(../img/tbut14.png) no-repeat 34px center;
+      background: url(../img/tbut13.png) no-repeat 34px center;
     }
     li:nth-child(15) a{
-      background: url(../img/tbut15.png) no-repeat 34px center;
+      background: url(../img/tbut1.png) no-repeat 34px center;
     }
     li:hover a{
-        color: #ff9900;
-        background-color: #FFF;
-        text-decoration:none;
+      color: #ff9900;
+      background-color: #FFF;
+      text-decoration:none;
+    } 
+  }
+  .item{
+    display: none;
+    height: 200px;
+    width: 300px;
+    background-color: #FFF;
+    padding:30px;
+    position:absolute;
+    left: 17.6%;;
+    z-index:100;
+    span{
+      display:inline-block;
+      width: 80px;
+      height: 30px;
+      text-align:center;
+      line-height: 30px;
+      color: #ff9900;
+      border:1px solid #ddd;
+      margin:0 10px 10px 0;
+      cursor:pointer; 
     }
   }
   .news{
@@ -112,16 +133,16 @@ $lineColor: #666;
     overflow:hidden;
     z-index:100;
     .navbtn{
-    padding: 8px 0 0 18px;
-    height: 40px;
-    width: 228px;
-    background-color: #FFC400;
-    .myBtn{
-      height: 24px;padding-top: 2px;
-      font-size:14px;
-      span{color:red;}
+      padding: 8px 0 0 18px;
+      height: 40px;
+      width: 228px;
+      background-color: #FFC400;
+      .myBtn{
+        height: 24px;padding-top: 2px;
+        font-size:14px;
+        span{color:red;}
+      }
     }
-  }
     p{
       background-color: #FFF;
       span{
@@ -144,6 +165,62 @@ $lineColor: #666;
           line-height:20px;
         }
       }  
+    }
+  }
+  .cart{
+    position: absolute;
+    top: 33px;
+    width: 210px;
+    right: 24px;
+    padding: 0 0 5px;
+    border: 1px solid #C7012C;
+    background: #fff;
+    overflow: hidden;
+    z-index:100;
+    // display: none;
+    .myCart{
+      background: #ffffcc;
+      p{
+        height: 16px;
+        line-height: 16px;
+        font-size:12px;
+        overflow: hidden;
+      }
+      img{
+        display: block;
+        width: 50px;
+        height: 50px;
+        float:left;
+      }
+      .txt{
+        padding: 6px 15px 0px 10px;
+        width: 150px;
+      }
+      .pri{
+        font-size: 14px;
+        height: 20px;
+        line-height: 20px;
+        font-weight: bold;
+        margin-left: 34px;
+        color: #c7012c;
+        text-align:right;
+      }
+      .del{
+        text-align:right;
+        color: #999;
+        text-decoration: underline;
+      }
+    }
+    .count{
+      border-top: 1px dotted #cccccc;
+      padding: 5px 10px;
+      span{
+        color: #c7012c;
+        font-weight: bold;
+      }
+    }
+    .turn{
+      margin-left: 50px;
     }
   }
 }

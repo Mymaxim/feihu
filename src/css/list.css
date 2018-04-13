@@ -474,9 +474,15 @@
   border-bottom: 2px solid #EBEBEB;
 }
 
+#main #scet .content li img {
+  width: 130px;
+  height: 130px;
+}
+
 #main #scet .content li h4 {
   color: #666;
   height: 40px;
+  overflow: hidden;
   line-height: 40px;
   font-size: 12px;
 }

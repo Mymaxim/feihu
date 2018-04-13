@@ -51,7 +51,7 @@ require(['jquery','common','magnifier'],function($,common){
                         <p class="shortname">${item.shortname}</p>
                         <p class="price clearfix"><span>飞&nbsp;&nbsp;虎&nbsp;&nbsp;价:<em><i>￥</i><strong>${item.price}</strong></em></span><span>商品编号：20611010021${item.id}</span></p>
                     `).prependTo('.goods');
-           });
+           })
             
             var num=$('.num').html();
             $(".number").on('click span',function(e){

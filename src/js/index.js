@@ -1,4 +1,9 @@
- $(function(){
+ require.config({
+    paths:{
+        'jquery':'../lib/js/jquery-3.2.1',
+    }
+ })
+    require(['jquery','common'],function($,common){
     //轮播图
     var items = $('#carousel').children();
     var len = items.length;
@@ -98,6 +103,34 @@
         }).join(""))
     })
 
+    var goodslist = common.Cookie('goodslist') || [];
+    if(typeof goodslist === 'string'){
+        goodslist = JSON.parse(goodslist);
+    }
+
+    //写入头部购物车
+    if(goodslist.length != 0){
+        $.each($(goodslist),function(idx,item){
+            var cont = $(`
+                    <tr data-id="${item.id}">
+                        <td><input type="checkbox" checked/></td>
+                        <td><img src="${item.imgurl}" /></td>
+                        <td>${item.name}</td>
+                        <td>
+                            <div class="clearfix">
+                                <input type="text" value='${item.qty}' class="qty"/>
+                                <span class="sub"> - </span>
+                                <span class="add"> + </span>
+                            </div>
+                         </td>
+                        <td>￥<span class='price'> ${item.price}<span></td>
+                        <td>￥ <span class="sum">${item.price*item.qty}</span></td>
+                        <td><span class="del">删除</span> | <span>收藏</span></td>
+                    </tr>
+                `).prependTo('tbody');
+        });      
+    }    
+
     //秒杀倒计时
     //   var d = new Date();
     //   var year = d.getFullYear();
@@ -130,9 +163,88 @@
         par+='?'+'id'+'='+data;
         location.href='html/details.html'+par;
     }
-    // 延时500ms执行点击首页商品跳转到详情页
+
+    function Ajax(data){
+        $.ajax({
+            url:'../api/index.php',
+            dataType:'json',
+            data:{category:data},
+            success:function(res){
+                console.log(res);
+            },
+        })
+    }
+    function Href(data){
+        par+='?'+'category'+'='+data;
+        location.href='html/list.html'+par;
+    }
+
+
+    // 点击首页商品跳转到详情页
     $('.rightSid').on('click','li',function(e){
         detailAjax(this.getAttribute('data-id'));
         detailHref(this.getAttribute('data-id'));
     })
+
+    var Timer;
+    $('.menu').on('mouseover','a',function(e){
+        clearTimeout(Timer);
+        if(e.target.parentNode.className == 'phone'){
+            $('.item').html('');
+            var item = $(`
+                    <span data-id="phone">手机</span>
+                    <span data-id="photo">摄影摄像</span>
+                    <span data-id="mouse">电脑外设</span>
+                    <span data-id="phone">手机</span>
+                    <span data-id="photo">摄影摄像</span>
+                    <span data-id="mouse">电脑外设</span>
+                `).appendTo(".item");
+            $('.item').css({"display":"block","top":"40px"});
+        }else if(e.target.parentNode.className == 'makeup'){
+            $('.item').html('');
+            var item = $(`
+                    <span data-id="face">面部护理</span>
+                    <span data-id="hair">洗发护发</span>
+                    <span data-id="makeup">魅力彩妆</span>
+                    <span data-id="face">面部护理</span>
+                    <span data-id="hair">洗发护发</span>
+                    <span data-id="makeup">魅力彩妆</span>
+                `).appendTo(".item");
+            $('.item').css({"display":"block","top":"72px"});
+        }else if (e.target.parentNode.className == 'food'){
+            $('.item').html('');
+            Timer = $(`
+                    <span data-id="fruits">水果生鲜</span>
+                    <span data-id="health">营养保健</span>
+                    <span data-id="food">坚果零食</span>
+                    <span data-id="wine">酒水</span>
+                    <span data-id="fruits">水果生鲜</span>
+                    <span data-id="health">营养保健</span>
+                    <span data-id="food">坚果零食</span>
+                    <span data-id="wine">酒水</span>
+                `).appendTo(".item");
+            $('.item').css({"display":"block","top":"104px"});
+        }else{
+            $('.item').html('');
+            var item = $(`
+                    <p>数据告急！！！</p>
+                    <p>数据告急！！！</p>
+                    <p>数据告急！！！</p>
+                `).appendTo(".item");
+            $('.item').css({"display":"block","top":"136px"});
+        }
+
+    }).on('mouseout','li',function(e){
+        Timer = setTimeout(function(){
+            $('.item').css("display","none");
+        },500)
+    })
+    $('.item').on('mouseover',function(){
+        clearTimeout(Timer);
+    });
+    $('.item').on('click','span',function(){
+        Ajax(this.getAttribute('data-id'));
+        Href(this.getAttribute('data-id'));
+    })
+
 });
