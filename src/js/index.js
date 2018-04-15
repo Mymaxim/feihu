@@ -132,62 +132,39 @@
     }    
 
     //秒杀倒计时
-    //   var d = new Date();
-    //   var year = d.getFullYear();
-    //   var month = d.getMonth()+1;
-    //   var date = d.getDate()+1;
-    //   var starttime = new Date("2018/4/8");
-    //   setInterval(function () {
-    //   var nowtime = new Date();
-    //   var time = starttime - nowtime;
-    //   var day = parseInt(time / 1000 / 60 / 60 / 24);
-    //   var hour = parseInt(time / 1000 / 60 / 60 % 24);
-    //   var minute = parseInt(time / 1000 / 60 % 60);
-    //   var seconds = parseInt(time / 1000 % 60);
-    //   $('.timespan').html(hour + ":" + minute + ":" + seconds);
-    // }, 1000);
   
+
     var par='';
     // 点击页面任意商品位置实现跳转到详情页ajax请求
-    function detailAjax(data){
-        $.ajax({
-            url:'../api/index.php',
-            dataType:'json',
-            data:{id:data},
-            success:function(res){
-                console.log(res);
-            },
-        })
-    }
+    // function detailAjax(data){
+    //     $.ajax({
+    //         url:'../api/index.php',
+    //         dataType:'json',
+    //         data:{id:data},
+    //         success:function(res){
+    //             console.log(res);
+    //         },
+    //     })
+    // }
     function detailHref(data){
-        par+='?'+'id'+'='+data;
+        par +='?'+'id'+'='+data;
         location.href='html/details.html'+par;
     }
 
-    function Ajax(data){
-        $.ajax({
-            url:'../api/index.php',
-            dataType:'json',
-            data:{category:data},
-            success:function(res){
-                console.log(res);
-            },
-        })
-    }
     function Href(data){
         par+='?'+'category'+'='+data;
         location.href='html/list.html'+par;
     }
 
-
     // 点击首页商品跳转到详情页
     $('.rightSid').on('click','li',function(e){
-        detailAjax(this.getAttribute('data-id'));
+        // detailAjax(this.getAttribute('data-id'));
         detailHref(this.getAttribute('data-id'));
     })
 
+    //二级菜单
     var Timer;
-    $('.menu').on('mouseover','a',function(e){
+    $('.menu').on('mouseenter','a',function(e){
         clearTimeout(Timer);
         if(e.target.parentNode.className == 'phone'){
             $('.item').html('');
@@ -213,7 +190,7 @@
             $('.item').css({"display":"block","top":"72px"});
         }else if (e.target.parentNode.className == 'food'){
             $('.item').html('');
-            Timer = $(`
+            var item = $(`
                     <span data-id="fruits">水果生鲜</span>
                     <span data-id="health">营养保健</span>
                     <span data-id="food">坚果零食</span>
@@ -234,17 +211,66 @@
             $('.item').css({"display":"block","top":"136px"});
         }
 
-    }).on('mouseout','li',function(e){
+    }).on('mouseleave','li',function(e){
         Timer = setTimeout(function(){
             $('.item').css("display","none");
         },500)
     })
-    $('.item').on('mouseover',function(){
+    $('.item').on('mouseenter',function(){
         clearTimeout(Timer);
+    }).on('mouseleave',function(){
+        Timer = setTimeout(function(){
+            $('.item').css("display","none");
+        },300);
     });
     $('.item').on('click','span',function(){
-        Ajax(this.getAttribute('data-id'));
+        // Ajax(this.getAttribute('data-id'));
         Href(this.getAttribute('data-id'));
     })
+
+    //写入头部cookie 
+    // common.writeIn(); 
+    // var goodslist = common.Cookie('goodslist') || [];
+    // if(typeof goodslist === 'string'){
+    //     goodslist = JSON.parse(goodslist);
+    // }
+    // if(goodslist.length == 0){
+    //     $('.cart').css("display","none")
+    // }else{
+    //     $('.number').text(goodslist.length);
+    //     $('.num').text(goodslist.length);
+    //     $.each($(goodslist),function(idx,item){
+    //         var cont = $(`
+    //             <img src="${item.imgurl.slice(2)}"/>
+    //                 <div class="txt fr">
+    //                     <p>${item.name}</p>
+    //                     <p class="pri">￥${item.price}</p>
+    //                     <p class="del">删除</p>
+    //                 </div>
+    //         `).prependTo('.myCart');
+    //     });
+    //     var mon =  $('.pri');
+    //     var val = 0;
+    //     var res = mon.map(function(idx,item){
+    //         return val += item.innerText.slice(1)*1;    
+    //     });
+    //     // eval(res.join('+'));
+    //     console.log(res.slice(-1)[0])
+    //     $('.money').html('￥'+res.slice(-1)[0].toFixed(2));
+    //     $(".shopping").on('mouseenter',function(){
+    //         clearTimeout(timer);
+    //         $('.cart').css("display","block")
+    //     }).on('mouseleave',function(){
+    //         timer = setTimeout(function(){
+    //             $('.cart').css("display","none");
+    //         },300);
+    //     })
+    //     $(".cart").on('mouseenter',function(){
+    //         clearTimeout(timer);
+    //         $('.cart').css("display","block")
+    //     }).on('mouseleave',function(){
+    //         $('.cart').css("display","none");
+    //     })
+    // }
 
 });

@@ -316,6 +316,7 @@
 
 #main .goods .buy .action {
   margin-top: 20px;
+  position: relative;
 }
 
 #main .goods .buy .action button {
@@ -334,6 +335,21 @@
 
 #main .goods .buy .action span:hover {
   color: #FFB923;
+}
+
+#main .goods .buy .action .animate {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #C7012C;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  top: -330px;
+  left: 250px;
+  display: none;
 }
 
 .Img .bg {

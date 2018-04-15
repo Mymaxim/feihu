@@ -1,77 +1,21 @@
 @charset "UTF-8";
-#search h1 {
-  height: 100px;
-  background: url(../img/logo.png) no-repeat center 15px;
+#nav .cont .myNav li:hover a {
+  background-color: #333;
 }
 
-#search .sear {
-  width: 430px;
-  padding-top: 38px;
+#nav .cont .myNav li:first-child:hover a {
+  background-color: #C7012C;
 }
 
-#search .sear input {
-  height: 28px;
-  border: 1px solid #FFC400;
-  border-radius: 0;
-}
-
-#search .sear span {
-  background-color: #FFC400;
-  border: 1px solid #FFC400;
-  color: #333;
-  border-radius: 0;
-}
-
-#nav {
-  background-color: #FFC400;
-  position: relative;
-}
-
-#nav .myNav li {
-  float: left;
-}
-
-#nav .myNav li a {
-  display: block;
-  color: #000;
-  padding: 0 15px;
-  text-align: center;
-  line-height: 40px;
-}
-
-#nav .myNav li:hover a {
-  background: #333;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-#nav .myNav li:first-child {
-  width: 190px;
-}
-
-#nav .myNav li:first-child:hover a {
-  background-color: #FFC400;
-  color: #000;
-}
-
-#nav button:nth-child(1) {
-  background-color: #FFF;
-  width: 120px;
-}
-
-#nav button:nth-child(2) {
-  background-color: #FFDE00;
-  width: 68px;
-}
-
-#nav .menu {
+#nav .cont .menu {
   position: absolute;
   top: 40px;
+  left: 2.5%;
   z-index: 100;
   background: #f6f6f6;
 }
 
-#nav .menu li a {
+#nav .cont .menu li a {
   display: block;
   height: 32px;
   line-height: 32px;
@@ -79,73 +23,73 @@
   text-align: center;
 }
 
-#nav .menu li:nth-child(1) a {
+#nav .cont .menu li:nth-child(1) a {
   background: url(../img/tbut15.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(2) a {
+#nav .cont .menu li:nth-child(2) a {
   background: url(../img/tbut9.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(3) a {
+#nav .cont .menu li:nth-child(3) a {
   background: url(../img/tbut14.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(4) a {
+#nav .cont .menu li:nth-child(4) a {
   background: url(../img/tbut4.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(5) a {
+#nav .cont .menu li:nth-child(5) a {
   background: url(../img/tbut5.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(6) a {
+#nav .cont .menu li:nth-child(6) a {
   background: url(../img/tbut6.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(7) a {
+#nav .cont .menu li:nth-child(7) a {
   background: url(../img/tbut7.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(8) a {
+#nav .cont .menu li:nth-child(8) a {
   background: url(../img/tbut8.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(9) a {
+#nav .cont .menu li:nth-child(9) a {
   background: url(../img/tbut3.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(10) a {
+#nav .cont .menu li:nth-child(10) a {
   background: url(../img/tbut2.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(11) a {
+#nav .cont .menu li:nth-child(11) a {
   background: url(../img/tbut10.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(12) a {
+#nav .cont .menu li:nth-child(12) a {
   background: url(../img/tbut11.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(13) a {
+#nav .cont .menu li:nth-child(13) a {
   background: url(../img/tbut12.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(14) a {
+#nav .cont .menu li:nth-child(14) a {
   background: url(../img/tbut13.png) no-repeat 34px center;
 }
 
-#nav .menu li:nth-child(15) a {
+#nav .cont .menu li:nth-child(15) a {
   background: url(../img/tbut1.png) no-repeat 34px center;
 }
 
-#nav .menu li:hover a {
+#nav .cont .menu li:hover a {
   color: #ff9900;
   background-color: #FFF;
   text-decoration: none;
 }
 
-#nav .item {
+#nav .cont .item {
   display: none;
   height: 200px;
   width: 300px;
@@ -156,7 +100,7 @@
   z-index: 100;
 }
 
-#nav .item span {
+#nav .cont .item span {
   display: inline-block;
   width: 80px;
   height: 30px;
@@ -168,39 +112,21 @@
   cursor: pointer;
 }
 
-#nav .news {
+#nav .cont .news {
   width: 228px;
-  height: 520px;
-  margin-right: 18px;
+  height: 480px;
   position: absolute;
-  top: 0px;
-  right: 0;
+  top: 40px;
+  right: 40px;
   overflow: hidden;
   z-index: 100;
 }
 
-#nav .news .navbtn {
-  padding: 8px 0 0 18px;
-  height: 40px;
-  width: 228px;
-  background-color: #FFC400;
-}
-
-#nav .news .navbtn .myBtn {
-  height: 24px;
-  padding-top: 2px;
-  font-size: 14px;
-}
-
-#nav .news .navbtn .myBtn span {
-  color: red;
-}
-
-#nav .news p {
+#nav .cont .news p {
   background-color: #FFF;
 }
 
-#nav .news p span {
+#nav .cont .news p span {
   display: inline-block;
   height: 40px;
   width: 126px;
@@ -211,84 +137,19 @@
   background: url("../img/gonggao.png") no-repeat 0 center;
 }
 
-#nav .news .gonggao {
+#nav .cont .news .gonggao {
   background-color: #EAF3DD;
   padding: 18px 10px;
 }
 
-#nav .news .gonggao li {
+#nav .cont .news .gonggao li {
   color: #FF0000;
 }
 
-#nav .news .gonggao li a {
+#nav .cont .news .gonggao li a {
   display: inline-block;
   font-size: 12px;
   line-height: 20px;
-}
-
-#nav .cart {
-  position: absolute;
-  top: 33px;
-  width: 210px;
-  right: 24px;
-  padding: 0 0 5px;
-  border: 1px solid #C7012C;
-  background: #fff;
-  overflow: hidden;
-  z-index: 100;
-}
-
-#nav .cart .myCart {
-  background: #ffffcc;
-}
-
-#nav .cart .myCart p {
-  height: 16px;
-  line-height: 16px;
-  font-size: 12px;
-  overflow: hidden;
-}
-
-#nav .cart .myCart img {
-  display: block;
-  width: 50px;
-  height: 50px;
-  float: left;
-}
-
-#nav .cart .myCart .txt {
-  padding: 6px 15px 0px 10px;
-  width: 150px;
-}
-
-#nav .cart .myCart .pri {
-  font-size: 14px;
-  height: 20px;
-  line-height: 20px;
-  font-weight: bold;
-  margin-left: 34px;
-  color: #c7012c;
-  text-align: right;
-}
-
-#nav .cart .myCart .del {
-  text-align: right;
-  color: #999;
-  text-decoration: underline;
-}
-
-#nav .cart .count {
-  border-top: 1px dotted #cccccc;
-  padding: 5px 10px;
-}
-
-#nav .cart .count span {
-  color: #c7012c;
-  font-weight: bold;
-}
-
-#nav .cart .turn {
-  margin-left: 50px;
 }
 
 #banner {
@@ -362,7 +223,7 @@
 }
 
 #banner .right {
-  right: 246px;
+  right: 268px;
 }
 
 #banner .dot {

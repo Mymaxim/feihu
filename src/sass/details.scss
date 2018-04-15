@@ -248,6 +248,7 @@ $price:#C7012C;
       }
       .action{
         margin-top: 20px;
+        position:relative;
         button{
           width: 140px;
         }
@@ -261,6 +262,20 @@ $price:#C7012C;
         }
         span:hover{
           color: #FFB923;
+        }
+        .animate{
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-radius:50%;
+          background-color: #C7012C;
+          color:#fff;
+          text-align:center;
+          line-height: 20px;
+          position:absolute;
+          top:-330px;
+          left:250px;
+          display: none;
         }
       }
     }

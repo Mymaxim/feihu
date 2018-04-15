@@ -10,7 +10,7 @@ require.config({
 require(['jquery','common','magnifier'],function($,common){
     $('#header').load('../index.html #header');
     $('#search').load('../index.html #search');
-    $('#nav').load('../html/list.html #nav');
+    $('#nav .cont').load('../index.html #nav .bar');
     $('.Img').load('../html/list.html .Img');
     $('#footer').load('../index.html #footer');
 
@@ -36,16 +36,15 @@ require(['jquery','common','magnifier'],function($,common){
         data:{id:par},
         success:function(res){
            $.each($(res),function(idx,item){
-                console.log(666);
-                // var imglist=$(`
-                //     <ul class="clearfix animation03">
-                //         <li><div class="small-img"><img src="${item.img}"/></div></li>
-                //         <li><div class="small-img"><img src="${item.img}"/></div></li>
-                //         <li><div class="small-img"><img src="${item.img}"/></div></li>
-                //         <li><div class="small-img"><img src="${item.img}"/></div></li>
-                //         <li><div class="small-img"><img src="${item.img}"/></div></li>
-                //     </ul>    
-                // `).appendTo('.magnifier-line');
+                var imglist=$(`
+                    <ul class="clearfix animation03">
+                        <li><div class="small-img"><img src="${item.img}"/></div></li>
+                        <li><div class="small-img"><img src="${item.img}"/></div></li>
+                        <li><div class="small-img"><img src="${item.img}"/></div></li>
+                        <li><div class="small-img"><img src="${item.img}"/></div></li>
+                        <li><div class="small-img"><img src="${item.img}"/></div></li>
+                    </ul>    
+                `).appendTo('.magnifier-line');
                 var cont = $(`
                         <p class="tit">${item.name}</p>
                         <p class="shortname">${item.shortname}</p>
@@ -53,7 +52,7 @@ require(['jquery','common','magnifier'],function($,common){
                     `).prependTo('.goods');
            })
             
-            var num=$('.num').html();
+            var num = $('.num').text();
             $(".number").on('click span',function(e){
                 e.preventDefault();
                 if(num<1){
@@ -77,37 +76,39 @@ require(['jquery','common','magnifier'],function($,common){
             }
             // res[0].shortname
             $(".action").on("click",function(e){
-                  if(e.target == $('.buyit').get(0)){
-                    var val = num;
-                    var idx;
-                    var has = goodslist.some(function(g,i){
-                        idx = i;
-                        return g.id === par;
-                    });
-                    if(has){
-                        goodslist[idx].qty=(goodslist[idx].qty)*1+val*1;
-                    }else{
-                        // 获取商品信息
-                        var goods = {
-                            id:par,
-                            name:res[0].shortname,
-                            imgurl:res[0].img,
-                            price:res[0].price,
-                            // 商品数量
-                            qty:val 
-                        };
-                        console.log(goods);
-                        goodslist.push(goods);
-                    }
+                var val = num;
+                var idx;
+                var has = goodslist.some(function(g,i){
+                    idx = i;
+                    return g.id === par;
+                });
+                if(has){
+                    goodslist[idx].qty=(goodslist[idx].qty)*1+val*1;
+                }else{
+                    // 获取商品信息
+                    var goods = {
+                        id:par,
+                        name:res[0].shortname,
+                        imgurl:res[0].img,
+                        price:res[0].price,
+                        // 商品数量
+                        qty:val 
+                    };
+                    goodslist.push(goods);
+                }
+                if(e.target == $('.join').get(0) || e.target == $('.buyit').get(0)){
                     var now=new Date();
                     now.setDate(now.getDate()+7);
                     document.cookie='goodslist='+JSON.stringify(goodslist)+';expires='+now.toUTCString()+';path=/';
-                    
-                    console.log(goodslist); 
-                    location.href='shoppingCart.html?id'+par;
-                  }  
-            })
 
+                }
+                if(e.target == $('.join').get(0)){
+                    $('.animate').fadeIn(500).animate({top:"-4px"},500).fadeOut(500).animate({top:'-330px'},500);
+                }
+                if(e.target == $('.buyit').get(0)){
+                    location.href='shoppingCart.html?id'+par;
+                }  
+            })
         },
     });
 });

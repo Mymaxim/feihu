@@ -51,14 +51,26 @@
         </div>
         <nav id="nav">
             <div class="cont clearfix">
-                <ul class="clearfix fl myNav">
-                    <li><a href="#">全部商品分类</a></li>
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">奶粉专区</a></li>
-                    <li><a href="#">夏普专区</a></li>
-                    <li><a href="#">飞虎团购</a></li>
-                    <li><a href="#">飞虎严选</a></li>
-                </ul>
+                <div class="bar clearfix">
+                    <ul class="clearfix fl myNav">
+                        <li><a href="#">全部商品分类</a></li>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">奶粉专区</a></li>
+                        <li><a href="#">夏普专区</a></li>
+                        <li><a href="#">飞虎团购</a></li>
+                        <li><a href="#">飞虎严选</a></li>
+                    </ul>
+                    <ul class="fr navbtn clearfix">
+                        <li class="Cart"><a href="#" class='Mycart shopping'>购物车( <em class='number'>0</em> )<i class="fa fa-sort-desc" aria-hidden="true"></i></a></li>
+                        <li><a href="html/shoppingCart.html">结算</a></li>
+                    </ul>
+                    <div class="cart">
+                        <div class="myCart clearfix">
+                        </div> 
+                        <p class="count">共<span class='num'></span>件 &nbsp;&nbsp;金额总计：<span class="money"></span></p>
+                        <button type="button" class="btn btn-danger turn"><a href="html/shoppingCart.html">去购物车结算</a></button> 
+                    </div>
+                </div>
                 <ul class="menu">
                     <li class="phone"><a href="#">手机数码</a></li>
                     <li class="makeup"><a href="#">洗护美妆</a></li>
@@ -77,18 +89,8 @@
                     <li class="electric"><a href="#">厨房电器</a></li>
                 </ul>
                 <div class="item">
-                    <span>手机</span>
-                    <span>摄影摄像</span>
-                    <span>电脑外设</span>
-                    <span>手机</span>
-                    <span>摄影摄像</span>
-                    <span>电脑外设</span>
                 </div>
                 <div class="news">
-                    <div class="btn-group fr navbtn" role="group" aria-label="...">
-                        <button type="button" class="btn myBtn">购物车(<span>0</span>)</button>
-                        <button type="button" class="btn myBtn"><a href="html/shoppingCart.html">去结算</a></button>
-                    </div>
                     <p><span>公告</span></p>
                     <ul class="gonggao">
                         <li>【公告】<a href="#">飞虎线上&线下合作伙伴招商</a></li>
@@ -98,18 +100,6 @@
                         <li>【公告】<a href="#">价格保护政策取消通知</a></li>
                     </ul>
                     <img src="img/kk.jpg" height="300" width="228" alt="" />
-                </div>
-                <div class="cart">
-                    <div class="myCart clearfix">
-                        <img src="img/5DIV_1.jpg" height="45" width="45"/>
-                        <div class="txt fr">
-                            <p>索尼(SONY) ILCE 套机 </p>
-                            <p class="pri">￥15299.0</p>
-                            <p class="del">删除</p>
-                        </div>
-                    </div> 
-                    <p class="count">共<span class='num'></span>件 &nbsp;&nbsp;金额总计：￥15299.00</p>
-                    <button type="button" class="btn btn-danger turn">去购物车结算</button> 
                 </div>
             </div>
         </nav>

@@ -94,7 +94,7 @@ require(['jquery','common'],function($,common){
                 })
                 $(this).parents('tr').remove();
                 judge();
-                count();
+                // count();
             }else{
                 val = 1;
             }
@@ -104,7 +104,7 @@ require(['jquery','common'],function($,common){
         var sum = $(this).parents('td').siblings().children('.sum');
         var price = $(this).parents('td').siblings().children('.price').text();
         sum.text(price*val);
-        count();
+        // count();
         $.each($(goodslist),(idx,item)=>{
             if(item.id == $(this).parents('tr').attr("data-id")){
                 goodslist[idx].qty = val;
@@ -146,7 +146,7 @@ require(['jquery','common'],function($,common){
         // 获取选中的复选框
         var $checkeds = $checkboxs.filter(':checked');
         // 判断勾选数量与checkbox的数量是否相等
-        $btnAll.prop('checked',$checkboxs.length===$checkeds.length);
+        $btnAll.prop('checked',$checkboxs.length==$checkeds.length);
     }
     checkall();
 
