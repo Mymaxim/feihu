@@ -14,7 +14,28 @@
     <header id="header"></header>
     <div id="search"></div>
     <nav id="nav">
-         <div class="cont clearfix"></div>
+         <div class="cont clearfix">
+            <div class="bar clearfix">
+                <ul class="clearfix fl myNav">
+                    <li><a href="#">全部商品分类</a></li>
+                    <li><a href="../index.html">首页</a></li>
+                    <li class="click" data-id="phone"><a href="#">手机数码</a></li>
+                    <li class="click" data-id="makeup"><a href="#">洗护美妆</a></li>
+                    <li class="click" data-id="food"><a href="#">食品/健康</a></li>
+                    <!-- <li><a href="#">飞虎严选</a></li> -->
+                </ul>
+                <ul class="fr navbtn clearfix">
+                    <li class="Cart"><a href="#" class='Mycart shopping'>购物车( <em class='number'>0</em> )<i class="fa fa-sort-desc" aria-hidden="true"></i></a></li>
+                    <li><a href="shoppingCart.html">结算</a></li>
+                </ul>
+                <div class="cart">
+                    <div class="myCart clearfix">
+                    </div> 
+                    <p class="count">共<span class='num'></span>件 &nbsp;&nbsp;金额总计：<span class="money"></span></p>
+                    <button type="button" class="btn btn-danger turn"><a href="html/shoppingCart.html">去购物车结算</a></button> 
+                </div>
+            </div>
+         </div>
     </nav>
     <main id="main">
         <div class="cont clearfix">
@@ -87,7 +108,7 @@
                             <div class="color">选择颜色：<span>深空灰色</span><span>黑色</span><span>白色</span></div>
                             <div class="ROM">选择内存：<span>64GB</span><span>256GB</span></div>
                         </div> -->
-                        <div class="number">我要买：<span class="subtract"> - </span><i class="num">1</i><span class="add"> + </span></div>
+                        <div class="want">我要买：<span class="subtract"> - </span><i class="wantnum">1</i><span class="add"> + </span></div>
                         <div class="action" style="-moz-user-select:none;">
                             <button type="button" class="btn btn-danger buyit">立即购买</button>
                             <button type="button" class="btn btn-warning join">加入购物车</button>

@@ -55,10 +55,10 @@
                     <ul class="clearfix fl myNav">
                         <li><a href="#">全部商品分类</a></li>
                         <li><a href="#">首页</a></li>
-                        <li><a href="#">奶粉专区</a></li>
-                        <li><a href="#">夏普专区</a></li>
-                        <li><a href="#">飞虎团购</a></li>
-                        <li><a href="#">飞虎严选</a></li>
+                        <li class="click" data-id="phone"><a href="#">手机数码</a></li>
+                        <li class="click" data-id="makeup"><a href="#">洗护美妆</a></li>
+                        <li class="click" data-id="food"><a href="#">食品/健康</a></li>
+                        <!-- <li><a href="#">飞虎严选</a></li> -->
                     </ul>
                     <ul class="fr navbtn clearfix">
                         <li class="Cart"><a href="#" class='Mycart shopping'>购物车( <em class='number'>0</em> )<i class="fa fa-sort-desc" aria-hidden="true"></i></a></li>
@@ -125,7 +125,7 @@
                  <button class="right">》</button>
          </div>
         </banner>
-        <div id="miaosha">
+        <!-- <div id="miaosha">
             <div class="cont">
                 <ul class="clearfix msGoods">
                     <li class="msTime">
@@ -133,23 +133,24 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <main id="main">
             <div class="cont clearfix">
                 <div class="tit  clearfix">
                     <h2 class="fl">手机数码</h2>
-                    <ul class="fr">
-                        <li><a href="#">手机</a></li>
-                        <li><a href="#">摄影摄像</a></li>
-                        <li><a href="#">鼠标</a></li>
-                        <li><a href="#">更多 >> </a></li>
+                    <ul class="fr cate">
+                        <li class="phone"><a href="#">手机</a></li>
+                        <li class="photo"><a href="#">摄影摄像</a></li>
+                        <li class="mouse"><a href="#">鼠标</a></li>
+                        <li class="headset"><a href="#">耳机</a></li>
+                        <!-- <li><a href="#">更多 >> </a></li> -->
                     </ul>
                 </div>
                 <div class="leftSide fl">
                     <ul class="clearfix">
-                        <li><a href="#"><img src="img/shuma1.jpg"/></a></li>
-                        <li><a href="#"><img src="img/shuma2.jpg"/></a></li>
-                        <li><a href="#"><img src="img/shuma3.jpg"/></a></li>
+                        <li data-id="phone" class="kinds"><img src="img/shuma1.jpg"/></li>
+                        <li data-id="66" class="goods"><img src="img/shuma2.jpg"/></li>
+                        <li data-id="68" class="goods"><img src="img/shuma3.jpg"/></li>
                     </ul>
                 </div>
                 <div class="rightSid fr">
@@ -176,18 +177,18 @@
                 </div>
                 <div class="tit clearfix">
                     <h2 class="fl">洗护美妆</h2>
-                    <ul class="fr">
-                        <li><a href="#">面部护理</a></li>
-                        <li><a href="#">洗发护发</a></li>
-                        <li><a href="#">魅力彩妆</a></li>
-                        <li><a href="#">更多 >> </a></li>
+                    <ul class="fr cate">
+                        <li data-id="face"><a href="#">面部护理</a></li>
+                        <li data-id="hair"><a href="#">洗发护发</a></li>
+                        <li data-id="makeup"><a href="#">魅力彩妆</a></li>
+                        <!-- <li><a href="#">更多 >> </a></li> -->
                     </ul>
                 </div>
                 <div class="leftSide fl">
                     <ul class="clearfix">
-                        <li><a href="#"><img src="img/meizhuang1.jpg"/></a></li>
-                        <li><a href="#"><img src="img/meizhuang2.jpg"/></a></li>
-                        <li><a href="#"><img src="img/meizhuang3.jpg"/></a></li>
+                        <li data-id="makeup" class="kinds"><img src="img/meizhuang1.jpg"/></li>
+                        <li data-id="40" class="goods"><img src="img/meizhuang2.jpg"/></li>
+                        <li data-id="69" class="goods"><img src="img/meizhuang3.jpg"/></li>
                     </ul>
                 </div>
                 <div class="rightSid fr">
@@ -214,18 +215,19 @@
                 </div>
                 <div class="tit clearfix">
                     <h2 class="fl">食品/健康</h2>
-                    <ul class="fr">
-                        <li><a href="#">水果生鲜</a></li>
-                        <li><a href="#">营养保健</a></li>
-                        <li><a href="#">坚果零食</a></li>
-                        <li><a href="#">更多 >> </a></li>
+                    <ul class="fr cate">
+                        <li data-id="fruits"><a href="#">水果生鲜</a></li>
+                        <li data-id="health"><a href="#">营养保健</a></li>
+                        <li data-id="food"><a href="#">坚果零食</a></li>
+                        <li data-id="wine"><a href="#">酒水</a></li>
+                        <!-- <li><a href="#">更多 >> </a></li> -->
                     </ul>
                 </div>
                 <div class="leftSide fl">
                     <ul class="clearfix">
-                        <li><a href="#"><img src="img/shipin1.jpg"/></a></li>
-                        <li><a href="#"><img src="img/shipin2.jpg"/></a></li>
-                        <li><a href="#"><img src="img/shipin3.jpg"/></a></li>
+                        <li data-id="food" class="kinds"><img src="img/shipin1.jpg"/></li>
+                        <li data-id="70" class="goods"><img src="img/shipin2.jpg"/></li>
+                        <li data-id="71" class="goods"><img src="img/shipin3.jpg"/></li>
                     </ul>
                 </div>
                 <div class="rightSid fr">

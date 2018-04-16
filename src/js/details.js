@@ -10,7 +10,6 @@ require.config({
 require(['jquery','common','magnifier'],function($,common){
     $('#header').load('../index.html #header');
     $('#search').load('../index.html #search');
-    $('#nav .cont').load('../index.html #nav .bar');
     $('.Img').load('../html/list.html .Img');
     $('#footer').load('../index.html #footer');
 
@@ -36,15 +35,15 @@ require(['jquery','common','magnifier'],function($,common){
         data:{id:par},
         success:function(res){
            $.each($(res),function(idx,item){
-                var imglist=$(`
-                    <ul class="clearfix animation03">
-                        <li><div class="small-img"><img src="${item.img}"/></div></li>
-                        <li><div class="small-img"><img src="${item.img}"/></div></li>
-                        <li><div class="small-img"><img src="${item.img}"/></div></li>
-                        <li><div class="small-img"><img src="${item.img}"/></div></li>
-                        <li><div class="small-img"><img src="${item.img}"/></div></li>
-                    </ul>    
-                `).appendTo('.magnifier-line');
+                // var imglist=$(`
+                //     <ul class="clearfix animation03">
+                //         <li><div class="small-img"><img src="${item.img}"/></div></li>
+                //         <li><div class="small-img"><img src="${item.img}"/></div></li>
+                //         <li><div class="small-img"><img src="${item.img}"/></div></li>
+                //         <li><div class="small-img"><img src="${item.img}"/></div></li>
+                //         <li><div class="small-img"><img src="${item.img}"/></div></li>
+                //     </ul>    
+                // `).appendTo('.magnifier-line');
                 var cont = $(`
                         <p class="tit">${item.name}</p>
                         <p class="shortname">${item.shortname}</p>
@@ -109,6 +108,53 @@ require(['jquery','common','magnifier'],function($,common){
                     location.href='shoppingCart.html?id'+par;
                 }  
             })
+
+            $('.myNav').on('click','.click',function(e){
+                var category = this.getAttribute('data-id');
+                location.href='list.html?category='+category;
+                
+            })
+
+            if(goodslist.length == 0){
+                $('.cart').css("display","none")
+            }else{
+                $('.number').text(goodslist.length);
+                $('.num').text(goodslist.length);
+                $.each($(goodslist),function(idx,item){
+                    console.log(item)
+                    var cont = $(`
+                        <img src="${item.imgurl}"/>
+                            <div class="txt fr">
+                                <p>${item.name}</p>
+                                <p class="pri">￥${item.price}</p>
+                                <p class="del">删除</p>
+                            </div>
+                    `).prependTo('.myCart');
+                });
+                var mon =  $('.pri');
+                var val = 0;
+                var result = mon.map(function(idx,item){
+                    return val += item.innerText.slice(1)*1;    
+                });
+                // eval(res.join('+'));
+                $('.money').html('￥'+result.slice(-1)[0].toFixed(2));
+
+                var timer;
+                $(".shopping").on('mouseenter',function(){
+                    clearTimeout(timer);
+                    $('.cart').css("display","block")
+                }).on('mouseleave',function(){
+                    timer = setTimeout(function(){
+                        $('.cart').css("display","none");
+                    },300);
+                })
+                $(".cart").on('mouseenter',function(){
+                    clearTimeout(timer);
+                    $('.cart').css("display","block")
+                }).on('mouseleave',function(){
+                    $('.cart').css("display","none");
+                })
+            }
         },
     });
 });

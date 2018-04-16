@@ -7,7 +7,6 @@ require.config({
     require(['jquery','common'],function($,common){
         $('#header').load('../index.html #header');
         $('#search').load('../index.html #search');
-        $('#nav .cont').load('../index.html #nav .bar');
         $('#footer').load('../index.html #footer');
 
         var par=location.search;
@@ -23,22 +22,9 @@ require.config({
         }
 
         //分页
-        // var pagination = 9;
-        // var pageLen = Math.ceil(res.prod.total/res.prod.qty);
-        // page.innerHTML = '';
-        // if(pageLen !=1){
-        //         for(var i=0;i<pageLen;i++){
-        //             var span = document.createElement('span');
-        //             span.innerText = i+1;
-        //             if(i==res.prod.page-1){
-        //                 span.className = 'active';
-        //             }
-        //             page.appendChild(span);
-        //             content.appendChild(page);
-        //         }  
-        //     }
-        //     xhr.open('get','../api/products.php?qty='+qty+'&classes='+classes,true);
 
+
+        $('.content').html('');
         $.ajax({
             url:'../api/list.php',
             dataType:'json',
@@ -73,6 +59,11 @@ require.config({
 
         $('.tabul').children('li').on('click',function(e){
             detailHref($(this).attr('data-id'));
+        })
+        $('.myNav').on('click','.click',function(e){
+            var category = this.getAttribute('data-id');
+            location.href='list.html?category='+category;
+            
         })
 
         var li = $('.tab').children();
@@ -128,6 +119,104 @@ require.config({
             var category = this.getAttribute('data-id');
             location.href='list.html?category='+category;
         })
+        $('.paixu').find('li')[0].classList.add('active')
+        var click = true;
+        $('.tit').on('click','li',function(){
+            $('.paixu').find('li').map(function(idx,item){
+                item.classList.remove('active');
+            })
+            $(this).addClass('active');
+            if(click == true){
+                console.log(666)
+                $('.content').html('');
+                $.ajax({
+                    url:'../api/list.php',
+                    dataType:'json',
+                    data:{category:par,paixu:"up"},
+                    success:function(res){
+                       $.each($(res),function(idx,item){
+                            var cont = $(`
+                                <li data-id="${item.id}">
+                                    <img src="${item.img}"/>
+                                    <h4> ${item.shortname} </h4>
+                                    <p>${item.name.slice(0,21)}</p>
+                                    <span>￥${item.price}</span>
+                                    <button>快速购买</button>
+                                    <button>加入购物车</button>
+                                </li>
+                            `).prependTo('.content');
+                        })
+                    }   
+                });
+                return click = false;
+            }else{
+                console.log(777);
+                $('.content').html('');
+                $.ajax({
+                    url:'../api/list.php',
+                    dataType:'json',
+                    data:{category:par,paixu:"down"},
+                    success:function(res){
+                       $.each($(res),function(idx,item){
+                            var cont = $(`
+                                <li data-id="${item.id}">
+                                    <img src="${item.img}"/>
+                                    <h4> ${item.shortname} </h4>
+                                    <p>${item.name.slice(0,21)}</p>
+                                    <span>￥${item.price}</span>
+                                    <button>快速购买</button>
+                                    <button>加入购物车</button>
+                                </li>
+                            `).prependTo('.content');
+                        })
+                    }   
+                });
+                return click = true;
+            }
+        })
 
+        var goodslist = common.Cookie('goodslist') || [];
+        if(typeof goodslist === 'string'){
+            goodslist = JSON.parse(goodslist);
+        }
+        if(goodslist.length == 0){
+            $('.cart').css("display","none")
+        }else{
+            $('.number').text(goodslist.length);
+            $('.num').text(goodslist.length);
+            $.each($(goodslist),function(idx,item){
+                var cont = $(`
+                    <img src="${item.imgurl.slice(2)}"/>
+                        <div class="txt fr">
+                            <p>${item.name}</p>
+                            <p class="pri">￥${item.price}</p>
+                            <p class="del">删除</p>
+                        </div>
+                `).prependTo('.myCart');
+            });
+            var mon =  $('.pri');
+            var val = 0;
+            var res = mon.map(function(idx,item){
+                return val += item.innerText.slice(1)*1;    
+            });
+            // eval(res.join('+'));
+            $('.money').html('￥'+res.slice(-1)[0].toFixed(2));
+
+            var timer;
+            $(".Cart").on('mouseenter','.shopping',function(){
+                clearTimeout(timer);
+                $('.cart').css("display","block")
+            }).on('mouseleave','.shopping',function(){
+                timer = setTimeout(function(){
+                    $('.cart').css("display","none");
+                },300);
+            })
+            $(".cart").on('mouseenter',function(){
+                clearTimeout(timer);
+                $('.cart').css("display","block")
+            }).on('mouseleave',function(){
+                $('.cart').css("display","none");
+            })
+        }
     });
 // });

@@ -14,7 +14,26 @@
     <div id="search"></div>
     <nav id="nav">
         <div class="cont clearfix">
-        
+            <div class="bar clearfix">
+                <ul class="clearfix fl myNav">
+                    <li><a href="#">全部商品分类</a></li>
+                    <li><a href="../index.html">首页</a></li>
+                    <li class="click" data-id="phone"><a href="#">手机数码</a></li>
+                    <li class="click" data-id="makeup"><a href="#">洗护美妆</a></li>
+                    <li class="click" data-id="food"><a href="#">食品/健康</a></li>
+                    <!-- <li><a href="#">飞虎严选</a></li> -->
+                </ul>
+                <ul class="fr navbtn clearfix">
+                    <li class="Cart"><a href="#" class='Mycart shopping'>购物车( <em class='number'>0</em> )<i class="fa fa-sort-desc" aria-hidden="true"></i></a></li>
+                    <li><a href="shoppingCart.html">结算</a></li>
+                </ul>
+                <div class="cart">
+                    <div class="myCart clearfix">
+                    </div> 
+                    <p class="count">共<span class='num'></span>件 &nbsp;&nbsp;金额总计：<span class="money"></span></p>
+                    <button type="button" class="btn btn-danger turn"><a href="html/shoppingCart.html">去购物车结算</a></button> 
+                </div>
+            </div>
         </div>
     </nav>
     <main id="main">
@@ -270,34 +289,27 @@
                     <div class="condition clearfix">
                         <span>类别：</span>
                         <ul class="clearfix brand">
-                            <li><a href="#">全部(8)</a></li>
-                            <li><a href="#">Apple</a></li>
-                            <li><a href="#">华为</a></li>
-                            <li><a href="#">小米</a></li>
-                            <li><a href="#">三星</a></li>
-                            <li><a href="#">VIVO</a></li>
-                            <li><a href="#">OPPO</a></li>
-                            <li><a href="#">魅族</a></li>
+                            <li><a href="#">智能</a></li>
+                            <li><a href="#">普通</a></li>
                         </ul>
                     </div>
                     <div class="condition clearfix">
                         <span>价格区间：</span>
                         <ul class="clearfix brand">
-                            <li><a href="#">全部(8)</a></li>
-                            <li><a href="#">Apple</a></li>
-                            <li><a href="#">华为</a></li>
-                            <li><a href="#">小米</a></li>
-                            <li><a href="#">三星</a></li>
-                            <li><a href="#">VIVO</a></li>
-                            <li><a href="#">OPPO</a></li>
-                            <li><a href="#">魅族</a></li>
+                            <li><a href="#">100以内</a></li>
+                            <li><a href="#">100-1000</a></li>
+                            <li><a href="#">1000-2000</a></li>
+                            <li><a href="#">2000-3000</a></li>
+                            <li><a href="#">3000-4000</a></li>
+                            <li><a href="#">4000-5000</a></li>
+                            <li><a href="#">5000以上</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="list">
                     <div class="tit clearfix">
-                        <ul class="clearfix fl">
-                            <li class="active">默认排序</li>
+                        <ul class="clearfix fl paixu">
+                            <li>默认排序</li>
                             <li>人气 <i class="fa fa-arrow-down" aria-hidden="true"></i></li>
                             <li>销量 <i class="fa fa-arrow-down" aria-hidden="true"></i></li>
                             <li>价格 <i class='updown'></i></li>
@@ -308,9 +320,9 @@
                             <li class="liebiao"><i></i> 列表</li>
                         </ul>
                     </div>
-                    <div class="pageNum">
+                    <!-- <div class="pageNum">
                         <p>共<em>169</em>个商品 &nbsp;&nbsp;<em>1</em>/5 &nbsp;&nbsp;<span class="pre active"> < </span><span class="after"> > </span></p>
-                    </div>
+                    </div> -->
                 </div>
                 <ul class="content clearfix">
                     
@@ -322,7 +334,6 @@
                             <li>1</li>
                             <li>2</li>
                             <li>3</li>
-                            <li>4</li>
                             <li>...</li>
                         </ul>
                         <span>下一页</span>

@@ -158,8 +158,21 @@
 
     // 点击首页商品跳转到详情页
     $('.rightSid').on('click','li',function(e){
-        // detailAjax(this.getAttribute('data-id'));
         detailHref(this.getAttribute('data-id'));
+    })
+    $('.leftSide').on('click','.goods',function(e){
+        detailHref(this.getAttribute('data-id'));
+    })
+    $('.leftSide').on('click','.kinds',function(e){
+        Href(this.getAttribute('data-id'));
+        
+    })
+    $('.cate').on('click','li',function(e){
+        Href(this.getAttribute('class'));  
+    })
+    $('.myNav').on('click','.click',function(e){
+        Href(this.getAttribute('data-id'));
+        
     })
 
     //二级菜单
@@ -229,7 +242,7 @@
     })
 
     //写入头部cookie 
-    // common.writeIn(); 
+    common.writeIn(); 
     // var goodslist = common.Cookie('goodslist') || [];
     // if(typeof goodslist === 'string'){
     //     goodslist = JSON.parse(goodslist);
